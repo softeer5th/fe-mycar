@@ -1,0 +1,69 @@
+{
+    "hybrid": [
+        {
+            "name": "캐스퍼 일렉트릭",
+            "cost": 2990,
+            "img": "casper_ev_45side.png"
+        },
+        {
+            "name": "넥쏘",
+            "cost": 6950,
+            "img": "nexo-24my-45side.png"
+        },
+        {
+            "name": "코나 Electric",
+            "cost": 4142,
+            "img": "kona-electric-24my-45side.png"
+        },
+        {
+            "name": "아이오닉 6",
+            "cost": 4695,
+            "img": "ioniq6-24my-45side.png"
+        },
+        {
+            "name": "더 뉴 아이오닉 5",
+            "cost": 4700,
+            "img": "the-new-ioniq5-24pe-45side.png"
+        },
+        {
+            "name": "ST1 내장탑차",
+            "cost": 5980,
+            "img": "st1-24lc-45side.png"
+        },
+        {
+            "name": "ST1 냉동탑차",
+            "cost": 6815,
+            "img": "st1-freezer-truck-24lc-45side.png"
+        },
+        {
+            "name": "ST1 샤시",
+            "cost": 5595,
+            "img": "st1-chassiscab-25my-45side.png"
+        },
+        {
+            "name": "ST1 특장 하이탑",
+            "cost": 5740,
+            "img": "st1-25my-45side.png"
+        },
+        {
+            "name": "포터 II Electric",
+            "cost": 4395,
+            "img": "porter2-electric-45side.png"
+        },
+        {
+            "name": "포터 II Electric 내장탑차",
+            "cost": 4805,
+            "img": "porter2-electric-built-in-truck-24my-45side.png"
+        },
+        {
+            "name": "포터 II Electric 윙바디",
+            "cost": 5006,
+            "img": "porter2-electric-wingbody-24my-45side.png"
+        },
+        {
+            "name": "포터 II Electric 파워게이트",
+            "cost": 4847,
+            "img": "porter2-electric-powergate-truck-24my-45side.png"
+        }
+    ]
+}
