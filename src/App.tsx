@@ -1,19 +1,12 @@
-import styled from "styled-components";
+import Banner from "./components/Banner";
 
 function App() {
 
   return (
-    <Title>
-      반갑습니다
-    </Title>
+      <Banner title="내 차 만들기" subTitle="내가 타고 싶은 나만의 차를 만들어보세요."/>
   )
 }
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: #BF4F74;
-`;
 
 export default App
 
