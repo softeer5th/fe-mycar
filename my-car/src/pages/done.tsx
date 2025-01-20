@@ -1,5 +1,3 @@
 export default function Done() {
-    return (
-        <div>done</div>
-    )
+  return <div>done</div>;
 }

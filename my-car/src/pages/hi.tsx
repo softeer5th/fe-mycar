@@ -1,5 +1,3 @@
 export default function Hi() {
-    return (
-        <div>fe</div>
-    )
+  return <div>fe</div>;
 }
