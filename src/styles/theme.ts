@@ -4,7 +4,8 @@ export const colors = {
   blue300: '#007fab',
   blue400: '#007fa8',
   navy: '#002c5f',
-  gray: '#666666',
+  gray400: '#666666',
+  gray300: '#e5e5e5',
   black: '#000000',
   white: '#ffffff',
   linkInactive: '#00000080',
@@ -29,7 +30,7 @@ export const fonts = {
     },
     medium: {
       'font-size': '20px',
-      'font-weight': '400',
+      'font-weight': '700',
       'line-height': '34px',
     },
   },
