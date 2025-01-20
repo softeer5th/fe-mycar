@@ -1,6 +1,6 @@
 export const colors = {
   beige400: '#e4dcd3',
-  beige300: '#f6f3f2',
+  beige300: '#f6f3f2b3',
   blue300: '#007fab',
   blue400: '#007fa8',
   navy: '#002c5f',
@@ -13,7 +13,7 @@ export const colors = {
 export const fonts = {
   title: {
     'font-size': '58px',
-    'font-weight': '400',
+    'font-weight': '700',
     'line-height': '51px',
   },
   subTitle: {

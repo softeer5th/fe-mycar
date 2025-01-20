@@ -1,19 +1,11 @@
-import { useState } from 'react';
-import styled from 'styled-components';
+import TitleSection from './components/TitleSection';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <>
-      <Container>테스트</Container>
+      <TitleSection />
     </>
   );
-}
+};
 
 export default App;
-
-const Container = styled.div`
-  ${(props) => props.theme.fonts.title};
-  background-color: ${(props) => props.theme.colors.beige400};
-`;
