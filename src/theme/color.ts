@@ -5,5 +5,5 @@ export const color = {
     "border": "#E9EAEA",
     "highlight": "#0580A9",
     "text-default": "#000000",
-    "text-sub": "#9E9D9D",   
+    "text-sub": "#666666",   
 }

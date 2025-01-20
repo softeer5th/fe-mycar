@@ -29,5 +29,19 @@ export const typo = {
         letterSpacing: "-.4",
         lineHeight: "normal",
         weight: 500,
-    })
+    }),
+    label: FONT({
+        font: "HyundaiSansTextKR",
+        size: 16,
+        letterSpacing: ".016",
+        lineHeight: "100%",
+        weight: 500
+    }),
+    body1: FONT({
+        font: "HyundaiSansTextKR",
+        size: 20,
+        letterSpacing: "-.4",
+        lineHeight: 34,
+        weight: 400
+    }),
 }
