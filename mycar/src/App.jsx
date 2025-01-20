@@ -17,7 +17,7 @@ function App() {
           </h1>
         </div>
       </header>
-      <main className='h-full w-full flex flex-col items-center'>
+      <main className='h-full w-full flex flex-col items-center overflow-auto'>
         <ModelSelect setCate={setCate} category={category} />
         <hr className='h-1 w-full'></hr>
         <div className='grid grid-cols-2 md:grid-cols-4'>

@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { Category } from '../datas/carInfo';
 
-export default function ModelSelect(props ) {
+export default function ModelSelect(props) {
   return (
     <div className='w-full h-20 flex justify-center items-center max-w-6xl'>
       <h2 className='min-w-max font-bold'>모델 선택</h2>
