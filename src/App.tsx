@@ -14,5 +14,6 @@ function App() {
 export default App;
 
 const Container = styled.div`
-  background-color: ${(props) => props.theme.color.beige400};
+  ${(props) => props.theme.fonts.title};
+  background-color: ${(props) => props.theme.colors.beige400};
 `;

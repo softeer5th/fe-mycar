@@ -1,17 +1,9 @@
 import 'styled-components';
+import theme from './theme';
+
+type ThemeType = typeof theme;
 
 declare module 'styled-components' {
-  export interface DefaultTheme {
-    color: {
-      beige400: string;
-      beige300: string;
-      blue300: string;
-      blue400: string;
-      navy: string;
-      gray: string;
-      black: string;
-      white: string;
-      linkInactive: string;
-    };
-  }
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  export interface DefaultTheme extends ThemeType {}
 }
