@@ -1,6 +1,6 @@
 import TitleSection from './components/TitleSection';
 
-const App = () => {
+const Home = () => {
   return (
     <>
       <TitleSection />
@@ -8,4 +8,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
