@@ -6,9 +6,12 @@ import { carModelRepository, carTypeRepository } from '../di';
 import { useEffect, useState } from 'react';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const [carTypes, setCarTypes] = useState<CarType[]>([]);
   const [carModelList, setCarModelList] = useState<CarModel[]>([]);
   const [isSelected, setIsSelected] = useState<CarType['carTypeCode']>('');
+
   useEffect(() => {
     async function fetchData() {
       const newCarTypes = await carTypeRepository.getCarTypes();
@@ -26,10 +29,8 @@ const Home = () => {
     fetchData();
   }, [isSelected]);
 
-  const navigate = useNavigate();
-
   const handleCarModelCardClick = (carCode: CarModel['carCode']) => {
-    // navigate('/');
+    navigate(`/model/${carCode}`);
   };
 
   return (
