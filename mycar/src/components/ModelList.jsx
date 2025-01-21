@@ -13,19 +13,15 @@ export default function ModelList({ carName }) {
     }
 
     useEffect(() => {
-        // 초기 너비 설정 및 창 크기 조정 감지
         function updateWidth() {
             if (elementRef.current) {
                 setRectWidth(elementRef.current.offsetWidth);
             }
         }
-        // 초기 실행
         updateWidth();
 
-        // 이벤트 리스너 추가
         window.addEventListener("resize", updateWidth);
 
-        // 클린업 함수
         return () => {
             window.removeEventListener("resize", updateWidth);
         };
@@ -40,12 +36,12 @@ export default function ModelList({ carName }) {
             <div className="absolute left-0 top-0">전체모델({models.length})</div>
             <div className="flex gap-2 justify-center items-center">
                 {Array.from({ length: totalPageCount }).map((_, index) => (
-                    <div
+                    <button
                         key={index}
                         className={`w-3 h-3 rounded-full ${index === pageNum ? "bg-blue-500" : "bg-gray-300"
                             }`}
                         onClick={() => { setPageNum(index) }}
-                    ></div>
+                    ></button>
                 ))}
             </div>
             <div className='relative'>

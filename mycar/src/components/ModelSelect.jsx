@@ -9,7 +9,7 @@ export default function ModelSelect(props) {
                 {Object.values(Category).map((value, i) => (
                     <button
                         className={classNames('min-w-max px-2 py-1', 
-                            props.category === value && 'text-blue-600',
+                            props.category === value && 'text-textBlue',
                         )}
                         key={i}
                         onClick={() => {

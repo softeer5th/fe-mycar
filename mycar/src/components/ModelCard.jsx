@@ -21,7 +21,10 @@ export default function ModelCard({ carModel, cardWidth }) {
           )
         })}
       </div>
-      <button className=" bg-buttonBlue  text-white font-normal py-3 ">내 차 만들기</button>
+      <button 
+        className=" bg-buttonBlue  text-white font-normal py-3 "
+        onClick={()=>{}}
+      >내 차 만들기</button>
     </div>
   )
 }
