@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react';
 import CarItem from './CarItem';
 import * as S from './CarList.styled';
-import { Car, TabValue } from '../../../Home.types';
+import { Car } from '../../../Home.types';
 import { getCarList } from '../../../../../api/car';
 
 interface CarListProps {
-  selectedTab: TabValue;
+  selectedTab: string;
 }
 
 const CarList = ({ selectedTab }: CarListProps) => {
   const [carList, setCarList] = useState<Car[]>([]);
 
   useEffect(() => {
-    const fetchCarList = async (selectedTab: TabValue) => {
+    const fetchCarList = async (selectedTab: string) => {
       const data = await getCarList(selectedTab);
       setCarList(data);
     };

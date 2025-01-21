@@ -1,23 +1,30 @@
-import { useState } from 'react';
-import CarModelNav from '../CarModelNav';
 import CarList from './CarList';
 import * as S from './CarSection.styled';
-import { TabValue } from '../../Home.types';
+import { TABS } from '../../Home.constants';
+import { Tab } from '../../../../components/Tab';
 
 const CarSection = () => {
-  const [selectedTab, setSelectedTab] = useState<TabValue>('electronic');
-
-  const handleClickTab = (e: React.MouseEvent<HTMLButtonElement>) => {
-    setSelectedTab(e.currentTarget.value as TabValue);
-  };
-
   return (
-    <>
-      <CarModelNav selectedTab={selectedTab} handleClickTab={handleClickTab} />
-      <S.CarSectionLayout>
-        <CarList selectedTab={selectedTab} />
-      </S.CarSectionLayout>
-    </>
+    <S.CarSectionLayout>
+      <Tab.root defaultValue={TABS[0].value}>
+        <S.TabBar>
+          <S.TabTitle>모델 선택</S.TabTitle>
+          <S.TabList>
+            {TABS.map((tab) => (
+              <li key={tab.value}>
+                <Tab.trigger value={tab.value}>{tab.label}</Tab.trigger>
+              </li>
+            ))}
+          </S.TabList>
+          <S.TabCheckbox>모델 비교</S.TabCheckbox>
+        </S.TabBar>
+        {TABS.map((tab) => (
+          <Tab.content value={tab.value}>
+            <CarList selectedTab={tab.value} />
+          </Tab.content>
+        ))}
+      </Tab.root>
+    </S.CarSectionLayout>
   );
 };
 

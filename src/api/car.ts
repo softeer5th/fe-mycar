@@ -1,6 +1,6 @@
-import { Car, TabValue } from '../pages/Home/Home.types';
+import { Car } from '../pages/Home/Home.types';
 
-export const getCarList = async (selectedTab: TabValue): Promise<Car[]> => {
+export const getCarList = async (selectedTab: string): Promise<Car[]> => {
   const res = await fetch(`/car?type=${selectedTab}`);
   return await res.json();
 };

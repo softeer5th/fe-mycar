@@ -25,7 +25,7 @@ export const fonts = {
   body: {
     small: {
       'font-size': '16px',
-      'font-weight': '400',
+      'font-weight': '500',
       'line-height': '1',
     },
     medium: {
