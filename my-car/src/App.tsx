@@ -1,18 +1,15 @@
-import './App.css';
-import { Route, Link, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Done from './pages/Done.tsx';
-import Option from './pages/Option.tsx';
-import ModelSelection from './pages/ModelSelection.tsx';
+import { RouterProvider } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './styles/GlobalStyle';
+import { theme } from './styles/theme';
+import { router } from './routes';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path={'/'} element={<ModelSelection />}></Route>
-        <Route path={'/option'} element={<Option />}></Route>
-        <Route path={'/done'} element={<Done />}></Route>
-      </Routes>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 }
 
