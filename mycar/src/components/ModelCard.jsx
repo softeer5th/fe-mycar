@@ -5,18 +5,20 @@ export default function ModelCard({ carModel }) {
     "https://www.hyundai.com/contents/vr360/CN17/trim/RB-USP-003.png"
   ]
   return (
-    <div className="flex flex-col">
-      <div className="">{carModel.modelName}</div>
-      <div className="">{carModel.price}</div>
-      <img className="" src={carModel.imageSrc} />
-      <div className="flex">
+    <div className="flex flex-col bg-thirdary p-6">
+      <div className=" text-xl font-bold">{carModel.modelName}</div>
+      <div className=" text-lg font-bold">{carModel.price}</div>
+      <img className=" mt-10" src={carModel.imageSrc} />
+      <div className=" w-full flex justify-around my-10">
         {optionImageList.map((optionImage, i) => {
           return (
-            <img key={i} src={optionImage} />
+            <img key={i} 
+            className=" w-1/4"
+            src={optionImage} />
           )
         })}
       </div>
-      <button className="">내 차 만들기</button>
+      <button className=" bg-buttonBlue  text-white font-normal py-3 ">내 차 만들기</button>
     </div>
   )
 }

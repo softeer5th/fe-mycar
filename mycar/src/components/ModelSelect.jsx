@@ -8,9 +8,9 @@ export default function ModelSelect(props) {
             <div className='w-full px-28 flex justify-around'>
                 {Object.values(Category).map((value, i) => (
                     <button
-                        className={classNames('min-w-max px-2 py-1', {
-                            'text-blue-600': props.category === value,
-                        })}
+                        className={classNames('min-w-max px-2 py-1', 
+                            props.category === value && 'text-blue-600',
+                        )}
                         key={i}
                         onClick={() => {
                             props.setCate(value);
