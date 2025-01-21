@@ -15,7 +15,7 @@ export const FilterList = () => {
 };
 
 const WdSelectWrapper = styled.div`
-  padding: 0 24px 12px;
+  width: 100%;
 `;
 
 const TitleContainer = styled.div`
@@ -31,7 +31,6 @@ const InfoIcon = styled(AiOutlineInfoCircle)`
 `;
 
 const WdSelectTitle = styled.p`
-  margin: 16px 16px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
@@ -44,4 +43,5 @@ const WdSelectButton = styled.button`
   color: #fff;
   width: 138px;
   height: 40px;
+  margin-top: 10px;
 `;

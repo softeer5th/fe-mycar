@@ -1,0 +1,74 @@
+{
+  "아이오닉6": {
+    "2WD": [
+      {
+        "name": "E-Value +(스탠다드) 18인치",
+        "price": "49,450,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "2WD"
+      },
+      {
+        "name": "Exclusive(스탠다드) 18인치",
+        "price": "52,090,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "2WD"
+      },
+      {
+        "name": "E-LITE(롱레인지) 18인치",
+        "price": "53,300,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "2WD"
+      },
+      {
+        "name": "E-LITE(롱레인지) 18인치",
+        "price": "53,300,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "2WD"
+      }
+    ],
+    "4WD": [
+      {
+        "name": "E-LITE(롱레인지) 18인치",
+        "price": "55,770,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "4WD"
+      },
+      {
+        "name": "Exclusive(롱레인지) 18인치",
+        "price": "59,400,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "4WD"
+      },
+      {
+        "name": "Exclusive(롱레인지) 20인치",
+        "price": "59,990,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "4WD"
+      },
+      {
+        "name": "Exclusive+(롱레인지) 18인치",
+        "price": "61,190,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "4WD"
+      },
+      {
+        "name": "Exclusive+(롱레인지) 20인치",
+        "price": "61,780,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "4WD"
+      },
+      {
+        "name": "Prestige(롱레인지) 18인치",
+        "price": "64,980,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "4WD"
+      },
+      {
+        "name": "Prestige(롱레인지) 20인치",
+        "price": "65,570,000 원",
+        "imgUrl": "/src/assets/standard_car_img.png",
+        "wd": "4WD"
+      }
+    ]
+  }
+}
