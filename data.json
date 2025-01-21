@@ -1,0 +1,458 @@
+{
+  "carTypeList": [
+    {
+      "carTypeCode": "E",
+      "carTypeName": "수소 / 전기차"
+    },
+    {
+      "carTypeCode": "N",
+      "carTypeName": "N"
+    },
+    {
+      "carTypeCode": "P",
+      "carTypeName": "승용"
+    },
+    {
+      "carTypeCode": "R",
+      "carTypeName": "SUV"
+    },
+    {
+      "carTypeCode": "S",
+      "carTypeName": "MPV"
+    },
+    {
+      "carTypeCode": "L",
+      "carTypeName": "소형트럭&택시"
+    },
+    {
+      "carTypeCode": "T",
+      "carTypeName": "트럭"
+    },
+    {
+      "carTypeCode": "B",
+      "carTypeName": "버스"
+    }
+  ],
+  "product": [
+    {
+      "carTypeCode": "E",
+      "carCode": "AX03",
+      "carName": "캐스퍼 일렉트릭",
+      "carPrice": "29900000",
+      "carImgPath": "/contents/repn-car/side-45/casper_ev_45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "FE04",
+      "carName": "넥쏘",
+      "carPrice": "69500000",
+      "carImgPath": "/contents/repn-car/side-45/nexo-24my-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "SX11",
+      "carName": "코나 Electric",
+      "carPrice": "41420000",
+      "carImgPath": "/contents/repn-car/side-45/kona-electric-24my-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "CE02",
+      "carName": "아이오닉 6",
+      "carPrice": "46950000",
+      "carImgPath": "/contents/repn-car/side-45/ioniq6-24my-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "NE04",
+      "carName": "더 뉴 아이오닉 5",
+      "carPrice": "47000000",
+      "carImgPath": "/contents/repn-car/side-45/the-new-ioniq5-24pe-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "TS02",
+      "carName": "ST1 내장탑차",
+      "carPrice": "59800000",
+      "carImgPath": "/contents/repn-car/side-45/st1-24lc-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "TS03",
+      "carName": "ST1 냉동탑차",
+      "carPrice": "68150000",
+      "carImgPath": "/contents/repn-car/side-45/st1-freezer-truck-24lc-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "TS05",
+      "carName": "ST1 샤시",
+      "carPrice": "55950000",
+      "carImgPath": "/contents/repn-car/side-45/st1-chassiscab-25my-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "TS06",
+      "carName": "ST1 특장 하이탑",
+      "carPrice": "57400000",
+      "carImgPath": "/contents/repn-car/side-45/st1-25my-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "M574",
+      "carName": "포터 II Electric",
+      "carPrice": "43950000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-electric-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "M591",
+      "carName": "포터 II Electric 내장탑차",
+      "carPrice": "48050000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-electric-built-in-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "M592",
+      "carName": "포터 II Electric 윙바디",
+      "carPrice": "50060000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-electric-wingbody-24my-45side.png"
+    },
+    {
+      "carTypeCode": "E",
+      "carCode": "M593",
+      "carName": "포터 II Electric 파워게이트",
+      "carPrice": "48470000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-electric-powergate-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "N",
+      "carCode": "NE05",
+      "carName": "아이오닉 5 N",
+      "carPrice": "77000000",
+      "carImgPath": "/contents/repn-car/side-45/ioniq5-n-25my-45side.png"
+    },
+    {
+      "carTypeCode": "N",
+      "carCode": "CN21",
+      "carName": "아반떼 N ",
+      "carPrice": "33090000",
+      "carImgPath": "/contents/repn-car/side-45/avante-n-25my-45side.png"
+    },
+    {
+      "carTypeCode": "P",
+      "carCode": "DN20",
+      "carName": "쏘나타 디 엣지",
+      "carPrice": "27880000",
+      "carImgPath": "/contents/repn-car/side-45/sonata-the-edge-25my-45side.png"
+    },
+    {
+      "carTypeCode": "P",
+      "carCode": "DN21",
+      "carName": "쏘나타 디 엣지 Hybrid",
+      "carPrice": "32320000",
+      "carImgPath": "/contents/repn-car/side-45/sonata-the-edge-hybrid-25my-45side.png"
+    },
+    {
+      "carTypeCode": "P",
+      "carCode": "CN17",
+      "carName": "아반떼",
+      "carPrice": "19640000",
+      "carImgPath": "/contents/repn-car/side-45/avante-25my-45side.png"
+    },
+    {
+      "carTypeCode": "P",
+      "carCode": "CN18",
+      "carName": "아반떼 Hybrid",
+      "carPrice": "24850000",
+      "carImgPath": "/contents/repn-car/side-45/avante-hybrid-25my-45side.png"
+    },
+    {
+      "carTypeCode": "P",
+      "carCode": "GN05",
+      "carName": "그랜저",
+      "carPrice": "37110000",
+      "carImgPath": "/contents/repn-car/side-45/grandeur-25my-45side.png"
+    },
+    {
+      "carTypeCode": "P",
+      "carCode": "GN06",
+      "carName": "그랜저 Hybrid",
+      "carPrice": "42670000",
+      "carImgPath": "/contents/repn-car/side-45/grandeur-hybrid-25my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "AX04",
+      "carName": "더 뉴 캐스퍼",
+      "carPrice": "14600000",
+      "carImgPath": "/contents/repn-car/side-45/casper-25my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "FX01",
+      "carName": "디 올 뉴 팰리세이드",
+      "carPrice": "43830000",
+      "carImgPath": "/contents/repn-car/side-45/palisade-25fc-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "FX02",
+      "carName": "디 올 뉴 팰리세이드 Hybrid",
+      "carPrice": "49820000",
+      "carImgPath": "/contents/repn-car/side-45/palisade-25fc-hybrid-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "NX13",
+      "carName": "투싼",
+      "carPrice": "27290000",
+      "carImgPath": "/contents/repn-car/side-45/tucson-25my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "NX14",
+      "carName": "투싼 Hybrid",
+      "carPrice": "32050000",
+      "carImgPath": "/contents/repn-car/side-45/tucson-hybrid-25my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "QX05",
+      "carName": "베뉴",
+      "carPrice": "21130000",
+      "carImgPath": "/contents/repn-car/side-45/venue-23my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "SX07",
+      "carName": "코나",
+      "carPrice": "24090000",
+      "carImgPath": "/contents/repn-car/side-45/kona-24my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "SX08",
+      "carName": "코나 Hybrid",
+      "carPrice": "29550000",
+      "carImgPath": "/contents/repn-car/side-45/kona-hybrid-24my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "MX05",
+      "carName": "싼타페",
+      "carPrice": "34920000",
+      "carImgPath": "/contents/repn-car/side-45/santafe-25my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "MX06",
+      "carName": "싼타페 Hybrid",
+      "carPrice": "38700000",
+      "carImgPath": "/contents/repn-car/side-45/santafe-hybrid-25my-45side.png"
+    },
+    {
+      "carTypeCode": "R",
+      "carCode": "LX06",
+      "carName": "팰리세이드",
+      "carPrice": "38370000",
+      "carImgPath": "/contents/repn-car/side-45/palisade-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US18",
+      "carName": "스타리아 라운지",
+      "carPrice": "37800000",
+      "carImgPath": "/contents/repn-car/side-45/staria-lounge-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US21",
+      "carName": "스타리아 라운지 Hybrid",
+      "carPrice": "41100000",
+      "carImgPath": "/contents/repn-car/side-45/staria-lounge-hybrid-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US17",
+      "carName": "스타리아",
+      "carPrice": "28470000",
+      "carImgPath": "/contents/repn-car/side-45/staria-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US20",
+      "carName": "스타리아 Hybrid",
+      "carPrice": "34330000",
+      "carImgPath": "/contents/repn-car/side-45/staria-hybrid-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US26",
+      "carName": "스타리아 휠체어",
+      "carPrice": "43100000",
+      "carImgPath": "/contents/repn-car/side-45/staria-wheelchair-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US25",
+      "carName": "스타리아 킨더",
+      "carPrice": "36430000",
+      "carImgPath": "/contents/repn-car/side-45/staria-kinder-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US23",
+      "carName": "스타리아 라운지 캠퍼",
+      "carPrice": "70940000",
+      "carImgPath": "/contents/repn-car/side-45/staria-lounge-camper-24my-45side.png"
+    },
+    {
+      "carTypeCode": "S",
+      "carCode": "US24",
+      "carName": "스타리아 라운지 리무진",
+      "carPrice": "59110000",
+      "carImgPath": "/contents/repn-car/side-45/staria-lounge-limousine-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "GN07",
+      "carName": "그랜저 택시",
+      "carPrice": "36050000",
+      "carImgPath": "/contents/repn-car/side-45/grandeur-taxi-25my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "TX01",
+      "carName": "쏘나타 택시",
+      "carPrice": "24800000",
+      "carImgPath": "/contents/repn-car/side-45/sonata-taxi-24lc-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "US19",
+      "carName": "스타리아 라운지 모빌리티",
+      "carPrice": "39890000",
+      "carImgPath": "/contents/repn-car/side-45/staria-lounge-mobility-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "US22",
+      "carName": "스타리아 라운지 모빌리티 Hybrid",
+      "carPrice": "43590000",
+      "carImgPath": "/contents/repn-car/side-45/staria-lounge-mobility-hybrid-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M575",
+      "carName": "포터 II",
+      "carPrice": "20280000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M582",
+      "carName": "포터 II 내장탑차",
+      "carPrice": "23800000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-built-in-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M580",
+      "carName": "포터 II 냉동탑차",
+      "carPrice": "28140000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-freezer-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M581",
+      "carName": "포터 II 냉장탑차",
+      "carPrice": "27870000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-refrigerator-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M583",
+      "carName": "포터 II 윙바디",
+      "carPrice": "25710000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-wingbody-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M584",
+      "carName": "포터 II 다용도탑차",
+      "carPrice": "25910000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-multi-purpose-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M585",
+      "carName": "포터 II 시티밴",
+      "carPrice": "30380000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-city-van-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M587",
+      "carName": "포터 II 파워게이트",
+      "carPrice": "24850000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-powergate-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M590",
+      "carName": "포터II 트랜스파워게이트",
+      "carPrice": "27820000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-transpowergate-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M586",
+      "carName": "포터 II 활어운반차",
+      "carPrice": "27240000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-live-fish-carrier-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M588",
+      "carName": "포터 II 이동주유차",
+      "carPrice": "41850000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-mobile-refueling-vehicle-24my-45side.png"
+    },
+    {
+      "carTypeCode": "L",
+      "carCode": "M589",
+      "carName": "포터 II 덤프",
+      "carPrice": "27400000",
+      "carImgPath": "/contents/repn-car/side-45/porter2-dump-truck-24my-45side.png"
+    },
+    {
+      "carTypeCode": "T",
+      "carCode": "WQ01",
+      "carName": "마이티",
+      "carPrice": "2",
+      "carImgPath": "/contents/repn-car/side-45/mighty-45side.png"
+    },
+    {
+      "carTypeCode": "T",
+      "carCode": "QV01",
+      "carName": "더 뉴 파비스",
+      "carPrice": "2",
+      "carImgPath": "/contents/repn-car/side-45/pavise-45side.png"
+    },
+    {
+      "carTypeCode": "B",
+      "carCode": "LU01",
+      "carName": "쏠라티",
+      "carPrice": "2",
+      "carImgPath": "/contents/repn-car/side-45/solati-45side.png"
+    },
+    {
+      "carTypeCode": "B",
+      "carCode": "LC01",
+      "carName": "카운티",
+      "carPrice": "2",
+      "carImgPath": "/contents/repn-car/side-45/county-24my-45side.png"
+    }
+  ]
+}
