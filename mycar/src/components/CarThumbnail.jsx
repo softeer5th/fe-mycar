@@ -1,9 +1,9 @@
-export default function CarThubnail(props) {
+export default function CarThubnail({imageLink, carName, carPrice, onClick}) {
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <img className='' src={props.imageLink}></img>
-      <h3>{props.carName}</h3>
-      <p>{props.carPrice}</p>
+    <div className='flex flex-col justify-center items-center' onClick={onClick}>
+      <img src={imageLink}></img>
+      <h3 className="font-bold">{carName}</h3>
+      <p>{carPrice}</p>
     </div>
   );
 }
