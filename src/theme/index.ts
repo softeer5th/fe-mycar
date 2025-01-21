@@ -9,3 +9,6 @@ export const theme: DefaultTheme = {
   color,
   typo,
 };
+
+export * from './GlobalStyle';
+export * from './GlobalFont';
