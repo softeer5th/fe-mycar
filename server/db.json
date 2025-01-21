@@ -1,0 +1,303 @@
+{
+    "vehicles": [
+      {  
+        "id": 1,
+        "name": "아이오닉6",
+        "type": "수소/전기",
+        "minPrice": 50000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+      },
+      {
+        "id": 2,
+        "name": "아이오닉5",
+        "type": "수소/전기",
+        "minPrice": 45000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq5-45side.png"
+      },
+      {
+        "id": 3,
+        "name": "아반떼",
+        "type": "N",
+        "minPrice": 20000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/avante-45side.png"
+      },
+      {
+        "id": 4,
+        "name": "소나타",
+        "type": "N",
+        "minPrice": 25000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/sonata-45side.png"
+      },
+      {
+        "id": 5,
+        "name": "그랜저",
+        "type": "N",
+        "minPrice": 30000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-45side.png"
+      },
+      {
+        "id": 6,
+        "name": "코나",
+        "type": "SUV",
+        "minPrice": 25000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/kona-45side.png"
+      },
+      {
+        "id": 7,
+        "name": "투싼",
+        "type": "SUV",
+        "minPrice": 30000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/tucson-45side.png"
+      },
+      {
+        "id": 8,
+        "name": "팰리세이드",
+        "type": "SUV",
+        "minPrice": 35000000,
+        "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+      },
+        {
+            "id": 9,
+            "name": "그랜드 스타렉스",
+            "type": "MPV",
+            "minPrice": 40000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grand-starex-45side.png"
+        },
+        {
+            "id": 10,
+            "name": "포터2",
+            "type": "소형트럭&택시",
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 11,
+            "name": "마이티",
+            "type": "트럭",
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/mighty-45side.png"
+        },
+        {
+            "id": 12,
+            "name": "카운티",
+            "type": "버스",
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/county-45side.png"
+        },
+        {
+            "id": 13,
+            "name": "포터",
+            "type": "소형트럭&택시",
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter-45side.png"
+        },
+        {
+            "id": 14,
+            "name": "팰리세이드",
+            "type": "SUV",
+            "minPrice": 35000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+        },
+        {
+            "id": 15,
+            "name": "그랜드 스타렉스",
+            "type": "MPV",
+            "minPrice": 40000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grand-starex-45side.png"
+        },
+        {
+            "id": 16,
+            "name": "포터2",
+            "type": "소형트럭&택시",
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 17,
+            "name": "마이티",
+            "type": "트럭",
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/mighty-45side.png"
+        },
+        {
+            "id": 18,
+            "name": "카운티",
+            "type": "버스",
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/county-45side.png"
+        },
+        {
+            "id": 19,
+            "name": "포터",
+            "type": "소형트럭&택시",
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter-45side.png"
+        },
+        {
+            "id": 20,
+            "name": "팰리세이드",
+            "type": "SUV",
+            "minPrice": 35000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+        },
+        {
+            "id": 21,
+            "name": "그랜드 스타렉스",
+            "type": "MPV",
+            "minPrice": 40000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grand-starex-45side.png"
+        },
+        {
+            "id": 22,
+            "name": "포터2",
+            "type": "소형트럭&택시",
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 23,
+            "name": "마이티",
+            "type": "트럭",
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/mighty-45side.png"
+        },
+        {
+            "id": 24,
+            "name": "카운티",
+            "type": "버스",
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/county-45side.png"
+        },
+        {
+            "id": 25,
+            "name": "포터",
+            "type": "소형트럭&택시",
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter-45side.png"
+        }
+    ],
+    "models": [
+        {
+            "id": 1,
+            "vehicleId": 1,
+            "spec": {
+                "engine": "수소",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 2,
+            "vehicleId": 1,
+            "spec": {
+                "engine": "전기",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "4WD"
+            },
+            "minPrice": 52000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        
+        },
+        {
+            "id": 3,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "전기",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 53000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 4,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "4WD"
+            },
+            "minPrice": 54000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 5,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "전기",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 55000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 6,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "4WD"
+            },
+            "minPrice": 56000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 7,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "전기",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 57000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 8,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "4WD"
+            },
+            "minPrice": 58000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 9,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "전기",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 59000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 10,
+            "vehicleId": 1,
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "4WD"
+            },
+            "minPrice": 60000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        }
+    ]
+}
+
