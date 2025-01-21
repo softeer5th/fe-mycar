@@ -1,0 +1,32 @@
+{
+    "colors": {
+        "exterior": [
+            {
+                "color": "아마존 그레이 메탈릭",
+                "cost": "-",
+                "img": "colorchip-exterior-1.png"
+            },
+            {
+                "color": "크리미 화이트 펄",
+                "cost": "-",
+                "img":"colorchip-exterior-2.png"
+            },
+            {
+                "color": "오션 인디코 펄",
+                "cost": "-",
+                "img":"colorchip-exterior-3.png",
+                "inValid": true
+            }
+        ],
+        "interior": [
+            {
+                "color": "스톤 그레이",
+                "img": "colorchip-interior-1.png"
+            },
+            {
+                "color": "메테오 블루",
+                "img": "colorchip-interior-2.png"
+            }
+        ]
+    }
+}
