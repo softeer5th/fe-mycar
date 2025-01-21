@@ -61,6 +61,7 @@ const ArticleContainer = styled.div`
 `;
 
 const Article = styled.article`
+  width: 25%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -68,7 +69,9 @@ const Article = styled.article`
 `;
 
 const ArticleTitle = styled.h4`
+  height: 72px;
   font-size: 24px;
+  word-break: keep-all;
 `;
 
 const ArticlePrice = styled.span`

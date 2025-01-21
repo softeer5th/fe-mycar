@@ -31,15 +31,13 @@ export const BoxListSlide = ({ is2WD }: { is2WD: boolean }) => {
   return (
     <BoxListSlideWrapper>
       <BoxListNav>
-        {/* Array.from({ length: totalPages }).map((_, index) => (
+        {Array.from({ length: totalPages }).map((_, index) => (
           <li key={index}>
-            <NavButton >
-              {index + 1}
-            </NavButton>
+            <NavButton onClick={() => setCurrentPage(0)} />
           </li>
-        ))} */}
+        ))}
       </BoxListNav>
-      <BoxList list={carData} />
+      <BoxList list={currentData} />
     </BoxListSlideWrapper>
   );
 };
