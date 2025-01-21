@@ -3,7 +3,7 @@ export type CarType = {
   carTypeName: string;
 };
 
-export type Product = {
+export type CarModel = {
   carTypeCode: string;
   carCode: string;
   carName: string;
