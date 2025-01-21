@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import Navigation from '../../../assets/navigation.png';
 import Trunk from '../../../assets/trunk.png';
 import DoorHandle from '../../../assets/door_handle.png';
+import { router } from '../../../routes';
 
 export const BoxList = ({ list }) => {
-  console.log('list', list);
   if (list == null) return;
   return (
     <BoxListWrapper>
@@ -34,7 +34,7 @@ export const BoxList = ({ list }) => {
                 <img src={DoorHandle} />
               </li>
             </ArticleOption>
-            <PrimaryButton>내 차 만들기</PrimaryButton>
+            <PrimaryButton onClick={() => router.navigate('/options')}>내 차 만들기</PrimaryButton>
           </Article>
         ))}
       </ArticleContainer>

@@ -2,7 +2,7 @@ import { BoxList } from './BoxList';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 
-export const BoxListSlide = () => {
+export const BoxListSlide = ({ is2WD }: { is2WD: boolean }) => {
   const [carData, setCarData] = useState([]);
 
   useEffect(() => {
@@ -10,25 +10,34 @@ export const BoxListSlide = () => {
       try {
         const response = await fetch('/src/assets/data/car.json');
         const data = await response.json();
-        setCarData(data['아이오닉6']['2WD']);
+        let wd = '4WD';
+
+        if (is2WD === true) wd = '2WD';
+        setCarData(data['아이오닉6'][wd]);
       } catch (error) {
         console.error('Error fetching car data:', error);
       }
     };
 
     fetchData();
-  }, []);
+  }, [is2WD]);
 
   const totalPages = Math.ceil(carData.length / 4);
+  const itemsPerPage = 4; // 페이지당 보여줄 아이템 개수
+
+  const [currentPage, setCurrentPage] = useState(0); // 현재 페이지 상태
+  const currentData = carData.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
 
   return (
     <BoxListSlideWrapper>
       <BoxListNav>
-        {Array.from({ length: totalPages }).map((_, index) => (
+        {/* Array.from({ length: totalPages }).map((_, index) => (
           <li key={index}>
-            <NavButton />
+            <NavButton >
+              {index + 1}
+            </NavButton>
           </li>
-        ))}
+        ))} */}
       </BoxListNav>
       <BoxList list={carData} />
     </BoxListSlideWrapper>
