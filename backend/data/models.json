@@ -4,19 +4,19 @@
             "product": "Premium",
             "cost": 73200000,
             "category": "5인승 수소전기 오토",
-            "img": "HB.png",
+            "img": "/images/models/HB.png",
             "options": [
                 {
                     "name": "서라운드 뷰 모니터",
-                    "img": "HB-USP-001.png"
+                    "img": "/images/models/HB-USP-001.png"
                 },
                 {
                     "name": "원격 스마트 주차 보조",
-                    "img": "HB-USP-002.png"
+                    "img": "/images/models/HB-USP-002.png"
                 },
                 {
                     "name": "후측방 모니터",
-                    "img": "HB-USP-003.png"
+                    "img": "/images/models/HB-USP-003.png"
                 }
             ]
         }
