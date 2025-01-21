@@ -1,4 +1,4 @@
-import "styled-components"
+import 'styled-components'
 import { ColorsTypes, FontsTypes } from '.';
 
 declare module 'styled-components' {

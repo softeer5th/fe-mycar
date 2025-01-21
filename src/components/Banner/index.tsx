@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface BannerProps {
     title: string;
@@ -7,18 +7,18 @@ interface BannerProps {
 
 const Banner = ({title, subTitle}: BannerProps) =>{
     return (
-        <OuterContainer>
-            <InnerContainer>
-                <Title>{title}</Title>
-                <SubTitle>{subTitle}</SubTitle>
-            </InnerContainer>
-        </OuterContainer>
+      <OuterContainer>
+        <InnerContainer>
+          <Title>{title}</Title>
+          <SubTitle>{subTitle}</SubTitle>
+        </InnerContainer>
+      </OuterContainer>
     )
 }
 
 const OuterContainer = styled.div`
     width: 100%;
-    background-color: ${(props) => props.theme.color["surface-dark"]};
+    background-color: ${(props) => props.theme.color['surface-dark']};
 `;
 
 const InnerContainer = styled.div`
@@ -29,7 +29,7 @@ const InnerContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 40px;
-    background-color: ${(props) => props.theme.color["surface-alt"]};
+    background-color: ${(props) => props.theme.color['surface-alt']};
 `;
 
 const Title = styled.div`

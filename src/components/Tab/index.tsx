@@ -1,6 +1,6 @@
-import { useState } from "react";
-import type { ReactNode } from "react";
-import styled from "styled-components";
+import { useState } from 'react';
+import type { ReactNode } from 'react';
+import styled from 'styled-components';
 
 interface TabProps {
     data: TabData[];
@@ -20,23 +20,23 @@ const Tab = ({ data }: TabProps) => {
 
 
     return (
+      <div>
+        <LabelListContainer>
+          <LabelTitle>모델 선택</LabelTitle>
+          <LabelList>
+            {labels.map((label) => 
+              <Label key={label} onClick={() => handleClickChangeTab(label)}>
+                <LabelButton selected={selectedTab === label}>
+                  {label}
+                </LabelButton>
+              </Label>)}
+          </LabelList>
+          <div>모델 비교</div>
+        </LabelListContainer>
         <div>
-            <LabelListContainer>
-                <LabelTitle>모델 선택</LabelTitle>
-                <LabelList>
-                    {labels.map((label) => 
-                    <Label key={label} onClick={() => handleClickChangeTab(label)}>
-                        <LabelButton selected={selectedTab === label}>
-                            {label}
-                        </LabelButton>
-                    </Label>)}
-                </LabelList>
-                <div>모델 비교</div>
-            </LabelListContainer>
-            <div>
-                {data.find(({label}) => label === selectedTab)?.content}
-            </div>
+          {data.find(({label}) => label === selectedTab)?.content}
         </div>
+      </div>
     )
 }
 
@@ -49,7 +49,7 @@ const LabelListContainer = styled.div`
     justify-content: space-between;
     height: 70px;
 
-    border-bottom: 1px solid ${(props) => props.theme.color["border"]};
+    border-bottom: 1px solid ${(props) => props.theme.color['border']};
 `
 
 const LabelTitle = styled.h3 `
@@ -70,7 +70,7 @@ const Label = styled.li`
 
 const LabelButton = styled.button<{selected: boolean}>`
     ${(props) => props.theme.typo.label};
-    color: ${(props) => props.selected ? props.theme.color.highlight : props.theme.color["text-sub"]};
+    color: ${(props) => props.selected ? props.theme.color.highlight : props.theme.color['text-sub']};
 `
 
 export default Tab;

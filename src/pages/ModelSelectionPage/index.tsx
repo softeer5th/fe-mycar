@@ -1,6 +1,6 @@
 const ModelSelectionPage = () => {
     return (
-        <div>Model Selection Page</div>
+      <div>Model Selection Page</div>
     )
 }
 

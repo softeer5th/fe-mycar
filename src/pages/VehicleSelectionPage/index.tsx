@@ -1,6 +1,6 @@
 const VehicleSelectionPage = () => {
     return (
-        <div>Vehicle Selection Page</div>
+      <div>Vehicle Selection Page</div>
     )
 }
 

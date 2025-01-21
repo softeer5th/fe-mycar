@@ -1,6 +1,6 @@
 const CompletionPage = () => {
     return (
-        <div>Completion Page</div>
+      <div>Completion Page</div>
     )
 }
 

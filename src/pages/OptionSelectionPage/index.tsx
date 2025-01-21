@@ -1,6 +1,6 @@
 const OptionSelectionPage = () => {
     return (
-        <div>Option Selection Page</div>
+      <div>Option Selection Page</div>
     )
 }
 
