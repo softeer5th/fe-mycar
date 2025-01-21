@@ -64,8 +64,8 @@ createRoot(document.getElementById('root')!).render(
       <GlobalStyle />
       <BrowserRouter>
         <Routes>
-          <Route index element={<App />} />
-          <Route path='vehicle-selection' element={<VehicleSelectionPage />} />
+          <Route path='/' element={<App />} />
+          <Route path='vehicle-selection' element={<VehicleSelectionPage />}/>
           <Route path='model-selection' element={<ModelSelectionPage />} />
           <Route path='option-selection' element={<OptionSelectionPage />} />
           <Route path='completion' element={<CompletionPage />} />
