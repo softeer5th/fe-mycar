@@ -5,7 +5,7 @@ interface HeaderProps {
   currentStep: number;
 }
 
-export function Header({ currentCarModel, currentStep }: HeaderProps) {
+export function Header({ currentCarModel }: HeaderProps) {
   return (
     <StyledHeader>
       <HeaderTop>

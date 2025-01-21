@@ -33,4 +33,4 @@ const BoxListSliderHeader = styled.div`
   align-items: center;
 `;
 
-const BoxListHeader = styled.div``;
+// const BoxListHeader = styled.div``;
