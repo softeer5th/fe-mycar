@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CarItem from './CarItem';
 import * as S from './CarList.styled';
+import { TabValue } from '../../../Home.types';
 
 const electronicCarList = [
   {
@@ -57,7 +58,7 @@ const passengerCarList = [
 ];
 
 interface CarListProps {
-  selectedTab: string;
+  selectedTab: TabValue;
 }
 
 const CarList = ({ selectedTab }: CarListProps) => {
