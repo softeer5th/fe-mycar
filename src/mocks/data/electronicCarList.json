@@ -22,5 +22,29 @@
     "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/casper_ev_45side.png",
     "name": "캐스퍼 일렉트릭",
     "price": 30000000
+  },
+  {
+    "id": 5,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/nexo-24my-45side.png",
+    "name": "넥쏘",
+    "price": 69500000
+  },
+  {
+    "id": 6,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/nexo-24my-45side.png",
+    "name": "넥쏘",
+    "price": 69500000
+  },
+  {
+    "id": 7,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/nexo-24my-45side.png",
+    "name": "넥쏘",
+    "price": 69500000
+  },
+  {
+    "id": 8,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/nexo-24my-45side.png",
+    "name": "넥쏘",
+    "price": 69500000
   }
 ]
