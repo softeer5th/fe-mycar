@@ -16,9 +16,9 @@ export const TabList = styled.ul`
   gap: 5rem;
 `;
 
-export const TabItem = styled.li`
+export const TabItem = styled.button<{ selected: boolean }>`
   ${({ theme }) => theme.fonts.body.small};
-  color: ${({ theme }) => theme.colors.gray400};
+  color: ${({ theme, selected }) => (selected ? theme.colors.blue300 : theme.colors.gray400)};
 `;
 
 export const TabTitle = styled.h3`

@@ -35,13 +35,26 @@ const tabs = [
   },
 ];
 
-const CarModelNav = () => {
+interface CarModelNavProps {
+  selectedTab: string;
+  handleClickTab: (e: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+const CarModelNav = ({ selectedTab, handleClickTab }: CarModelNavProps) => {
   return (
     <S.CarModelNavLayout>
       <S.TabTitle>모델 선택</S.TabTitle>
       <S.TabList>
         {tabs.map((tab) => (
-          <S.TabItem>{tab.label}</S.TabItem>
+          <li key={tab.value}>
+            <S.TabItem
+              value={tab.value}
+              onClick={handleClickTab}
+              selected={selectedTab === tab.value}
+            >
+              {tab.label}
+            </S.TabItem>
+          </li>
         ))}
       </S.TabList>
       <S.TabCheckbox>모델 비교</S.TabCheckbox>
