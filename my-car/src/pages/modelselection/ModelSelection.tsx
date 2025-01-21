@@ -9,8 +9,10 @@ export default function ModelSelection() {
       <Header currentCarModel="아이오닉6" currentStep={0}></Header>
 
       <MainContent>
-        <FilterList />
-        <BoxListSlide />
+        <ModelSelectContainer>
+          <FilterList />
+          <BoxListSlide />
+        </ModelSelectContainer>
       </MainContent>
     </ModelSelectionWrapper>
   );
@@ -21,4 +23,10 @@ const MainContent = styled.main`
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px 12px 24px;
+  box-sizing: border-box;
 `;
+
+const ModelSelectContainer = styled.div``;
