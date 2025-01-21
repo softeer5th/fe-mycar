@@ -1,11 +1,5 @@
+import { Car } from '../../../../Home.types';
 import * as S from './CarItem.styled';
-
-interface Car {
-  id: number;
-  imgSrc: string;
-  name: string;
-  price: number;
-}
 
 interface CarItemProps {
   car: Car;
