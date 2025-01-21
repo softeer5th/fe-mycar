@@ -1,91 +1,36 @@
 import { useNavigate } from 'react-router';
 import SelectButton from '../components/button/select-button';
 import CarModelCard from '../components/card/car-model-card';
-import { CarType, Product } from '../core/model';
+import { CarModel, CarType } from '../core/model';
+import { carModelRepository, carTypeRepository } from '../di';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
   const navigate = useNavigate();
-  const carTypes: CarType[] = [
-    {
-      carTypeCode: 'E',
-      carTypeName: '수소 / 전기차',
-    },
-    {
-      carTypeCode: 'N',
-      carTypeName: 'N',
-    },
-    {
-      carTypeCode: 'P',
-      carTypeName: '승용',
-    },
-    {
-      carTypeCode: 'R',
-      carTypeName: 'SUV',
-    },
-    {
-      carTypeCode: 'S',
-      carTypeName: 'MPV',
-    },
-    {
-      carTypeCode: 'L',
-      carTypeName: '소형트럭&택시',
-    },
-    {
-      carTypeCode: 'T',
-      carTypeName: '트럭',
-    },
-    {
-      carTypeCode: 'B',
-      carTypeName: '버스',
-    },
-  ];
 
-  const carModelList: Product[] = [
-    {
-      carTypeCode: 'E',
-      carCode: 'AX03',
-      carName: '캐스퍼 일렉트릭',
-      carPrice: 29900000,
-      carImgPath: '/contents/repn-car/side-45/casper_ev_45side.png',
-    },
-    {
-      carTypeCode: 'E',
-      carCode: 'FE04',
-      carName: '넥쏘',
-      carPrice: 69500000,
-      carImgPath: '/contents/repn-car/side-45/nexo-24my-45side.png',
-    },
-    {
-      carTypeCode: 'E',
-      carCode: 'SX11',
-      carName: '코나 Electric',
-      carPrice: 41420000,
-      carImgPath: '/contents/repn-car/side-45/kona-electric-24my-45side.png',
-    },
-    {
-      carTypeCode: 'E',
-      carCode: 'CE02',
-      carName: '아이오닉 6',
-      carPrice: 46950000,
-      carImgPath: '/contents/repn-car/side-45/ioniq6-24my-45side.png',
-    },
-    {
-      carTypeCode: 'E',
-      carCode: 'NE04',
-      carName: '더 뉴 아이오닉 5',
-      carPrice: 47000000,
-      carImgPath: '/contents/repn-car/side-45/the-new-ioniq5-24pe-45side.png',
-    },
-    {
-      carTypeCode: 'E',
-      carCode: 'TS02',
-      carName: 'ST1 내장탑차',
-      carPrice: 59800000,
-      carImgPath: '/contents/repn-car/side-45/st1-24lc-45side.png',
-    },
-  ];
-  const handleCarModelCardClick = (carCode: Product['carCode']) => {
-    // navigate('/');
+  const [carTypes, setCarTypes] = useState<CarType[]>([]);
+  const [carModelList, setCarModelList] = useState<CarModel[]>([]);
+  const [isSelected, setIsSelected] = useState<CarType['carTypeCode']>('');
+
+  useEffect(() => {
+    async function fetchData() {
+      const newCarTypes = await carTypeRepository.getCarTypes();
+      setIsSelected(newCarTypes[0].carTypeCode);
+      setCarTypes(newCarTypes);
+    }
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    async function fetchData() {
+      const newCarModelList = await carModelRepository.getCarModels(isSelected);
+      setCarModelList(newCarModelList);
+    }
+    fetchData();
+  }, [isSelected]);
+
+  const handleCarModelCardClick = (carCode: CarModel['carCode']) => {
+    navigate(`/model/${carCode}`);
   };
 
   return (
@@ -105,17 +50,21 @@ const Home = () => {
           모델 선택
         </h3>
         <ul className=" flex items-center">
-          {carTypes.map((carType, index) => (
-            <li className="mx-[25px]" key={index}>
-              <SelectButton text={carType.carTypeName} isActive={true} />
+          {carTypes.map((carType) => (
+            <li className="mx-[25px]" key={carType.carTypeCode}>
+              <SelectButton
+                onSelectClick={() => setIsSelected(carType.carTypeCode)}
+                text={carType.carTypeName}
+                isActive={carType.carTypeCode === isSelected}
+              />
             </li>
           ))}
         </ul>
       </div>
       <div className="border-t border-[#e5e5e5] w-full ">
         <ul className=" py-[60px] grid grid-cols-4 gap-x-[10px] gap-y-[80px] max-w-[1120px] mx-auto my-0">
-          {carModelList.map((carModel, index) => (
-            <li key={index}>
+          {carModelList.map((carModel) => (
+            <li key={carModel.carCode}>
               <CarModelCard
                 onCarModelCardClick={() =>
                   handleCarModelCardClick(carModel.carCode)
