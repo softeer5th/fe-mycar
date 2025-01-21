@@ -1,1 +1,1 @@
-   cd my-car && npm run lint && npm run format
+   cd my-car && npm run lint && npm run format && tsc --noEmit
