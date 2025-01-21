@@ -6,14 +6,14 @@ interface BannerProps {
 }
 
 const Banner = ({title, subTitle}: BannerProps) =>{
-    return (
-      <OuterContainer>
-        <InnerContainer>
-          <Title>{title}</Title>
-          <SubTitle>{subTitle}</SubTitle>
-        </InnerContainer>
-      </OuterContainer>
-    )
+  return (
+    <OuterContainer>
+      <InnerContainer>
+        <Title>{title}</Title>
+        <SubTitle>{subTitle}</SubTitle>
+      </InnerContainer>
+    </OuterContainer>
+  )
 }
 
 const OuterContainer = styled.div`

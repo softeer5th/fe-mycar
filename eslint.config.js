@@ -25,9 +25,12 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      
+      'indent': ['error', 2],
       'react/jsx-indent': ['error', 2],
+
       quotes: ['error', 'single'],
-      'jsx-quotes': ['error', 'prefer-single'], 
+      'jsx-quotes': ['error', 'prefer-single'],
     },
   },
 )

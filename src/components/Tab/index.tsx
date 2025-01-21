@@ -12,32 +12,32 @@ interface TabData {
 }
 
 const Tab = ({ data }: TabProps) => {
-    const [selectedTab, setSelectedTab] = useState(data[0].label);
-    const labels = data.map(({label}) => label);
-    const handleClickChangeTab = (label: string) => {
-        setSelectedTab(label);
-    }
+  const [selectedTab, setSelectedTab] = useState(data[0].label);
+  const labels = data.map(({label}) => label);
+  const handleClickChangeTab = (label: string) => {
+    setSelectedTab(label);
+  }
 
 
-    return (
+  return (
+    <div>
+      <LabelListContainer>
+        <LabelTitle>모델 선택</LabelTitle>
+        <LabelList>
+          {labels.map((label) => 
+            <Label key={label} onClick={() => handleClickChangeTab(label)}>
+              <LabelButton selected={selectedTab === label}>
+                {label}
+              </LabelButton>
+            </Label>)}
+        </LabelList>
+        <div>모델 비교</div>
+      </LabelListContainer>
       <div>
-        <LabelListContainer>
-          <LabelTitle>모델 선택</LabelTitle>
-          <LabelList>
-            {labels.map((label) => 
-              <Label key={label} onClick={() => handleClickChangeTab(label)}>
-                <LabelButton selected={selectedTab === label}>
-                  {label}
-                </LabelButton>
-              </Label>)}
-          </LabelList>
-          <div>모델 비교</div>
-        </LabelListContainer>
-        <div>
-          {data.find(({label}) => label === selectedTab)?.content}
-        </div>
+        {data.find(({label}) => label === selectedTab)?.content}
       </div>
-    )
+    </div>
+  )
 }
 
 const LabelListContainer = styled.div`

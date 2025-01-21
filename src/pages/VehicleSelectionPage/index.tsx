@@ -1,7 +1,7 @@
 const VehicleSelectionPage = () => {
-    return (
-      <div>Vehicle Selection Page</div>
-    )
+  return (
+    <div>Vehicle Selection Page</div>
+  )
 }
 
 export default VehicleSelectionPage;
