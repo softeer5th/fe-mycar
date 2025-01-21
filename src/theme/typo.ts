@@ -44,4 +44,11 @@ export const typo = {
     lineHeight: 34,
     weight: 400,
   }),
+  body2: FONT({
+    font: 'HyundaiSansTextKR',
+    size: 14,
+    lineHeight: 28,
+    letterSpacing: '-.4',
+    weight: 400,
+  }),
 }
