@@ -29,7 +29,7 @@ export const Detail = styled.p`
 
 // tap menu style
 
-export const TapMenuWrapper = styled.div`
+export const TabMenuWrapper = styled.div`
   max-width: 1120px;
   margin: 0px auto;
   display: flex;
@@ -42,7 +42,7 @@ export const TapMenuWrapper = styled.div`
   }
 `;
 
-export const TapMenuName = styled.h3`
+export const TabMenuName = styled.h3`
   margin-right: 50px;
   flex: 1;
   font-size: 20px;

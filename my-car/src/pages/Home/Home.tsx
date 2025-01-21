@@ -13,8 +13,8 @@ import {
   TabMenuButton,
   TabMenuIconList,
   TabMenuIconWrapper,
-  TapMenuName,
-  TapMenuWrapper,
+  TabMenuName,
+  TabMenuWrapper,
   Title,
 } from "./style";
 import { PageTitleWrapper } from "./style";
@@ -27,8 +27,9 @@ export default function Home() {
           <Detail>내가 타고 싶은 나만의 차를 만들어보세요.</Detail>
         </PageTitle>
       </PageTitleWrapper>
-      <TapMenuWrapper>
-        <TapMenuName>모델 선택</TapMenuName>
+
+      <TabMenuWrapper>
+        <TabMenuName>모델 선택</TabMenuName>
         <TabMenuIconWrapper>
           <TabMenuIconList>
             <TabMenuButton>
@@ -72,7 +73,7 @@ export default function Home() {
           </TabMenuIconList>
         </TabMenuIconWrapper>
         <ModelCompare>모델 비교</ModelCompare>
-      </TapMenuWrapper>
+      </TabMenuWrapper>
       <div style={{ borderBottom: "1px solid #e5e5e5" }}></div>
 
       <CarModelList>
