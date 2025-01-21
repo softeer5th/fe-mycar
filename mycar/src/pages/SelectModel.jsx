@@ -4,8 +4,10 @@ import ModelSelect from '../components/ModelSelect';
 import { carThumbnails, Category } from '../datas/carInfo';
 import { Link } from 'react-router-dom';
 
+const initialCategory = Category.EV;
+
 export default function SelectModel () {
-    const [category, setCate] = useState(Category.EV);
+    const [category, setCate] = useState(initialCategory);
 
     return (
         <div className='h-dvh w-full min-w-96 flex flex-col'>
@@ -22,9 +24,8 @@ export default function SelectModel () {
         <hr className='h-1 w-full'></hr>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-10 py-10 px-10 lg:px-52'>
           {carThumbnails.filter((car) => car.carType === category).map((car, i) => (
-            <Link to={`/select-option/${car.carName}`}>
+            <Link key={i} to={`/select-option/${car.carName}`}>
               <CarThumbnail
-                key={i}
                 imageLink={car.imageLink}
                 carName={car.carName}
                 carPrice={car.carPrice}
