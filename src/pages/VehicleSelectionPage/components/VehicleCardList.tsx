@@ -5,10 +5,7 @@ import styled from 'styled-components';
 
 const VehicleCardList = ({label, vehicleDataList} : {label: string, vehicleDataList : Promise<Vehicle[]>}) => {
   const data = use(vehicleDataList);
-
-  console.log(data?.filter(vehicle => vehicle.type === label));
-  console.log(data);
-
+  
   return (
     <CardListContainer>
       {data?.filter(vehicle => vehicle.type === label)

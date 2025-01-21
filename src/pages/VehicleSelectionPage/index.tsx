@@ -5,19 +5,24 @@ import VehicleCardList from './components/VehicleCardList';
 import { fetchVehicleData } from '../../apis';
 
 const VehicleSelectionPage = () => {
+  const VEHICLE_TYPES = ['수소/전기', 'N', '승용', 'SUV', 'MPV', '소형트럭&택시', '트럭', '버스'];
+
   const vehicleDataList = fetchVehicleData();
-  const temp = [
-    { label: '수소/전기', content: <Suspense fallback={<div>loading...</div>}>
-      <VehicleCardList label={'수소/전기'} vehicleDataList={vehicleDataList} />
-    </Suspense>},
-    { label: 'temp2', content: <div>temp2</div> },
-    { label: 'temp3', content: <div>temp3</div> },
-    { label: 'temp4', content: <div>temp4</div> },
-    { label: 'temp5', content: <div>temp5</div> },
-    { label: 'temp6', content: <div>temp6</div> },
-    { label: 'temp7', content: <div>temp7</div> },
-    { label: 'temp8', content: <div>temp8</div> },
-  ];
+  
+  const makeVehicleCardList = ({ label }: { label: string }) => {
+    return (
+      <Suspense fallback={<div>loading...</div>}>
+        <VehicleCardList label={label} vehicleDataList={vehicleDataList} />
+      </Suspense>
+    );
+  }
+
+  const vehicleTabDataList = VEHICLE_TYPES.map((type) => {
+    return {
+      label: type,
+      content: makeVehicleCardList({ label: type }),
+    }
+  })
 
   return (
     <div>
@@ -25,10 +30,7 @@ const VehicleSelectionPage = () => {
         title='내 차 만들기'
         subTitle='내가 타고 싶은 나만의 차를 만들어보세요.'
       />
-      <Tab data={temp} />
-      {/* <Suspense fallback={<div>loading...</div>}>
-        <VehicleCardList label={} vehicleDataList={vehicleDataList} />
-      </Suspense> */}
+      <Tab data={vehicleTabDataList} />
     </div>
   );
 }
