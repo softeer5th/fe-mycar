@@ -18,7 +18,6 @@ const Tab = ({ data }: TabProps) => {
     setSelectedTab(label);
   }
 
-
   return (
     <div>
       <LabelListContainer>

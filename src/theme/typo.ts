@@ -21,7 +21,7 @@ export const typo = {
     font: 'HyundaiSansHeadKR',
     weight: 400,
     size: 58,
-    lineHeight: 51
+    lineHeight: 51,
   }),
   heading2: FONT({
     font: 'HyundaiSansHeadKR',
@@ -35,13 +35,13 @@ export const typo = {
     size: 16,
     letterSpacing: '.016',
     lineHeight: '100%',
-    weight: 500
+    weight: 500,
   }),
   body1: FONT({
     font: 'HyundaiSansTextKR',
     size: 20,
     letterSpacing: '-.4',
     lineHeight: 34,
-    weight: 400
+    weight: 400,
   }),
 }

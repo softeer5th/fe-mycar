@@ -31,6 +31,10 @@ export default tseslint.config(
 
       quotes: ['error', 'single'],
       'jsx-quotes': ['error', 'prefer-single'],
+
+      "comma-dangle": ["error", "always-multiline"],
+
+      "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
     },
   },
 )
