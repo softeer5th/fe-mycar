@@ -1,4 +1,4 @@
-import {Detail, PageTitle, PageTitleWrapper, Title} from "./HomeBanner.style.ts";
+import {Detail, PageTitle, PageTitleWrapper, Title} from "./HomeBanner.styled.ts";
 
 
 export default function HomeBanner() {

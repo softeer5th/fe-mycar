@@ -7,7 +7,7 @@ import {
     CarModelGrid,
     CarName,
     CarText
-} from "./CarModelList.style.ts";
+} from "./CarModelList.styled.ts";
 import {useEffect, useState} from "react";
 import {carModelSelectionType} from "../../Home.tsx";
 

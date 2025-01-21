@@ -5,7 +5,7 @@ import {
     TabMenuIconWrapper,
     TapMenuName,
     TapMenuWrapper
-} from "./TabMenu.style.ts";
+} from "./TabMenu.styled.ts";
 import {carModelSelectionType} from "../../Home.tsx";
 import * as React from "react";
 
