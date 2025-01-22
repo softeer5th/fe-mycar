@@ -18,7 +18,7 @@ export default function OptionPageHeader({ step, setStep }) {
                     <p>모델 선택</p>
                 </div>
                 <hr className="h-8 bg-black opacity-30" style={{ width: '1px' }} />
-                <div className={classNames("relative flex justify-between gap-6 pb-6", { 'step text-black': step === 2 })} onClick={() => setStep(2)}>
+                <div className={classNames("relative flex justify-between gap-6 pb-6", { 'step text-black': step === 2 })}>
                     <p>02</p>
                     <p>내 차 만들기</p>
                 </div>

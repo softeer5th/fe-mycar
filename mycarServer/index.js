@@ -16,11 +16,23 @@ app.get('/', (req, res) => {
 });
 
 app.get('/carThumbnails', (req, res) => {
+
   res.send(carThumbnails);
 })
 
-app.get('/carDetailModels', (req, res) => {
-  res.send(carDetailModels);
+app.get('/carDetailModels/:modelName', (req, res) => {
+  // Path parameter 가져오기
+  const { modelName } = req.params;
+
+  // carDetailModels 배열 필터링
+  const filteredModels = carDetailModels.find(model => model.carName === modelName);
+
+  // 결과 반환
+  if (filteredModels) {
+    res.status(200).send(filteredModels);
+  } else {
+    res.status(404).send({ message: 'Model not found' });
+  }
 })
 
 // 서버 시작

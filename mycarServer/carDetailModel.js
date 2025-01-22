@@ -75,12 +75,12 @@ const carDetailModels = [
             {
                 modelName: "Modern",
                 price: "25,770,000 원",
-                imageSrc: "https://www.hyundai.com/kr/ko/vehicles/tucson/trim/modern.png",
+                imageSrc: "https://www.hyundai.com/contents/vr360/NX13/trim/DD.png",
             },
             {
                 modelName: "Inspiration",
                 price: "31,350,000 원",
-                imageSrc: "https://www.hyundai.com/kr/ko/vehicles/tucson/trim/inspiration.png",
+                imageSrc: "https://www.hyundai.com/contents/vr360/NX13/trim/DC.png",
             },
         ],
     },

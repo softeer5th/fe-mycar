@@ -1,16 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import ModelCard from "./ModelCard";
 
-export default function ModelList({ carName }) {
+export default function ModelList({ models, setSelectedModel }) {
     const [pageNum, setPageNum] = useState(0);
     const [rectWidth, setRectWidth] = useState(100);
     const elementRef = useRef(null);
-
-    function searchModels(modelName) {
-        const carModels = carDetailModels.find((carModel) => carModel.carName === modelName).detailModels;
-        return carModels;
-    }
-
+    
     useEffect(() => {
         function updateWidth() {
             if (elementRef.current) {
@@ -26,7 +21,6 @@ export default function ModelList({ carName }) {
         };
     }, []);
 
-    const models = searchModels(carName);
     let cardPerPage = 4;
     const totalPageCount = Math.ceil(models.length / cardPerPage);
 
@@ -48,7 +42,7 @@ export default function ModelList({ carName }) {
                     style={{ transform: `translateX(${-(rectWidth + 28) * pageNum}px)` }}>
                     {models.map((carModel, i) => {
                         return (
-                            <ModelCard key={i} carModel={carModel} cardWidth={rectWidth / cardPerPage} />
+                            <ModelCard key={i} carModel={carModel} cardWidth={rectWidth / cardPerPage} setSelectedModel={setSelectedModel} />
                         )
                     })}
                 </div>
