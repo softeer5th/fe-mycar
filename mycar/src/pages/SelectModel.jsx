@@ -1,16 +1,22 @@
-import { useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import CarThumbnail from '../components/CarThumbnail';
 import ModelSelect from '../components/ModelSelect';
-import { carThumbnails, Category } from '../datas/carInfo';
+import { Category } from '../datas/carInfo';
 import { Link } from 'react-router-dom';
+import { useQuery } from "@tanstack/react-query";
+import { getThumbnails } from '../apis/dataFetch';
 
 const initialCategory = Category.EV;
 
 export default function SelectModel () {
+    const { data, isLoading, error } = useQuery({
+      queryKey: ['thumbnails'],
+      queryFn: getThumbnails
+    });
     const [category, setCate] = useState(initialCategory);
 
     return (
-        <div className='h-dvh w-full min-w-96 flex flex-col'>
+      <div className='h-dvh w-full min-w-96 flex flex-col'>
       <header className='h-2/5 bg-primary p-10 pb-0 flex-shrink-0'>
         <div className='w-full h-full bg-secondary flex flex-col justify-center items-center gap-8'>
           <h1 className='text-6xl font-bold'>내 차 만들기</h1>
@@ -23,7 +29,7 @@ export default function SelectModel () {
         <ModelSelect setCate={setCate} category={category} />
         <hr className='h-1 w-full'></hr>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-10 py-10 px-10 lg:px-52'>
-          {carThumbnails.filter((car) => car.carType === category).map((car, i) => (
+          {data && data.filter((car) => car.carType === category).map((car, i) => (
             <Link key={i} to={`/select-option/${car.carName}`}>
               <CarThumbnail
                 imageLink={car.imageLink}
