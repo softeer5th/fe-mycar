@@ -26,6 +26,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html, body, #root {
+	width: 100vw;
+	height: 100vh;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+}
 body {
 	line-height: 1;
 }
