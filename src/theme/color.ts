@@ -8,4 +8,5 @@ export const color = {
   'text-default': '#000000',
   'text-disabled': '#00000080',
   'text-sub': '#666666',   
+  'blue-dark':'#002C5F',
 }
