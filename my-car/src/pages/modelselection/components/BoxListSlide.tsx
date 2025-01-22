@@ -15,29 +15,32 @@ export const BoxListSlide = ({ is2WD }: { is2WD: boolean }) => {
         if (is2WD === true) wd = '2WD';
         setCarData(data['아이오닉6'][wd]);
       } catch (error) {
-        console.error('Error fetching car data:', error);
+        alert(error);
       }
     };
-
+    setCurrentPage(0);
     fetchData();
   }, [is2WD]);
 
   const totalPages = Math.ceil(carData.length / 4);
-  const itemsPerPage = 4; // 페이지당 보여줄 아이템 개수
 
   const [currentPage, setCurrentPage] = useState(0); // 현재 페이지 상태
-  const currentData = carData.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
 
   return (
     <BoxListSlideWrapper>
       <BoxListNav>
         {Array.from({ length: totalPages }).map((_, index) => (
           <li key={index}>
-            <NavButton onClick={() => setCurrentPage(0)} />
+            <NavButton isSelected={index === currentPage} onClick={() => setCurrentPage(index)} />
           </li>
         ))}
       </BoxListNav>
-      <BoxList list={currentData} />
+
+      <SlideContainer>
+        <SlideWrapper currentPage={currentPage}>
+          <BoxList list={carData} />
+        </SlideWrapper>
+      </SlideContainer>
     </BoxListSlideWrapper>
   );
 };
@@ -60,10 +63,22 @@ const BoxListNav = styled.ul`
   z-index: 2;
 `;
 
-const NavButton = styled.button`
+const NavButton = styled.button<{ isSelected: boolean }>`
   width: 12px;
   height: 12px;
   border-radius: 6px;
   padding: 0;
-  background-color: #ddd;
+  background-color: ${({ isSelected }) => (isSelected ? '#007fa8' : '#ddd')};
+`;
+
+const SlideContainer = styled.div`
+  overflow: hidden;
+  width: 100%;
+  max-width: calc(350px * 4 + 16px * 3);
+`;
+
+const SlideWrapper = styled.div<{ currentPage: number }>`
+  display: flex;
+  transform: translateX(-${(props) => props.currentPage * 100}%);
+  transition: transform 0.5s ease-in-out;
 `;

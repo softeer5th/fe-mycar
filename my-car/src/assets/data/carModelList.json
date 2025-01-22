@@ -1,0 +1,193 @@
+{
+  "수소/전기차": [
+    {
+      "name": "아이오닉5",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "넥쏘",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "코나 Electric",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "아이오닉 6",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "아이오닉5",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "넥쏘",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "코나 Electric",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ],
+  "N": [
+    {
+      "name": "아반떼",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "소나타",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "그랜저",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "팰리세이드",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ],
+  "승용": [
+    {
+      "name": "아반떼",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "소나타",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "그랜저",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "팰리세이드",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ],
+  "SUV": [
+    {
+      "name": "아반떼",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "소나타",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "그랜저",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "팰리세이드",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ],
+  "MPV": [
+    {
+      "name": "아반떼",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "소나타",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "그랜저",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "팰리세이드",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ],
+  "소형트럭 & 택시": [
+    {
+      "name": "아반떼",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "소나타",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "그랜저",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "팰리세이드",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ],
+  "트럭": [
+    {
+      "name": "아반떼",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "소나타",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "그랜저",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "팰리세이드",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ],
+  "버스": [
+    {
+      "name": "아반떼",
+      "price": "2,990만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "소나타",
+      "price": "6,950만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "그랜저",
+      "price": "4,142만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    },
+    {
+      "name": "팰리세이드",
+      "price": "4,695만원 ~",
+      "img": "/src/assets/standard_car_img.png"
+    }
+  ]
+}
