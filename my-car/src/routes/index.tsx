@@ -6,7 +6,7 @@ import Option from '../pages/option.tsx';
 
 export const routes = {
   modelSelection: '/',
-  options: '/options',
+  options: '/options/:model',
   done: '/done',
 };
 

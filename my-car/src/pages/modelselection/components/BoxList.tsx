@@ -34,7 +34,9 @@ export const BoxList = ({ list }) => {
                 <img src={DoorHandle} />
               </li>
             </ArticleOption>
-            <PrimaryButton onClick={() => router.navigate('/options')}>내 차 만들기</PrimaryButton>
+            <PrimaryButton onClick={() => router.navigate(`/options/${item.carType}`)}>
+              내 차 만들기
+            </PrimaryButton>
           </Article>
         ))}
       </ArticleContainer>

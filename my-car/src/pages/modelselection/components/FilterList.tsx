@@ -45,7 +45,7 @@ const WdSelectTitle = styled.p`
   font-weight: 700;
 `;
 
-const WdSelectButton = styled.button`
+const WdSelectButton = styled.button<{ isSelected: boolean }>`
   border-radius: 0;
   background-color: ${(props) => (props.isSelected ? '#007fa8' : '#fff')};
   color: ${(props) => (props.isSelected ? '#fff' : '#000')};
