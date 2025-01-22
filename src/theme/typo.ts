@@ -30,6 +30,20 @@ export const typo = {
     lineHeight: 'normal',
     weight: 500,
   }),
+  heading3: FONT({
+    font: 'NanumHumanTTFBold',
+    size: 26,
+    letterSpacing: '-.4',
+    lineHeight: 'normal',
+    weight: 500,
+  }),
+  heading4: FONT({
+    font: 'NanumHumanTTFBold',
+    size: 22,
+    letterSpacing: '-.4',
+    lineHeight: 'normal',
+    weight: 500,
+  }),
   label: FONT({
     font: 'NanumHumanTTFBold',
     size: 16,
