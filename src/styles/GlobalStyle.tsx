@@ -53,6 +53,11 @@ table {
     font-size: 10px;
   }
 
+  button {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+  }
   
 `;
 

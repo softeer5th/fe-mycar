@@ -1,6 +1,4 @@
-import * as S from './CarModelNav.styled';
-
-const tabs = [
+export const TABS = [
   {
     label: '수소/전기차',
     value: 'electronic',
@@ -33,20 +31,4 @@ const tabs = [
     label: '버스',
     value: 'bus',
   },
-];
-
-const CarModelNav = () => {
-  return (
-    <S.CarModelNavLayout>
-      <S.TabTitle>모델 선택</S.TabTitle>
-      <S.TabList>
-        {tabs.map((tab) => (
-          <S.TabItem>{tab.label}</S.TabItem>
-        ))}
-      </S.TabList>
-      <S.TabCheckbox>모델 비교</S.TabCheckbox>
-    </S.CarModelNavLayout>
-  );
-};
-
-export default CarModelNav;
+] as const;

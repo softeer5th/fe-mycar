@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/sonata-the-edge-25my-45side.png",
+    "name": "쏘나타 디 엣지",
+    "price": 27880000
+  },
+  {
+    "id": 2,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/sonata-the-edge-25my-45side.png",
+    "name": "쏘나타 디 엣지",
+    "price": 27880000
+  },
+  {
+    "id": 3,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/sonata-the-edge-25my-45side.png",
+    "name": "쏘나타 디 엣지",
+    "price": 27880000
+  },
+  {
+    "id": 4,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/sonata-the-edge-25my-45side.png",
+    "name": "쏘나타 디 엣지",
+    "price": 27880000
+  },
+  {
+    "id": 5,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-25my-45side.png",
+    "name": "그랜저",
+    "price": 37110000
+  },
+  {
+    "id": 6,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-25my-45side.png",
+    "name": "그랜저",
+    "price": 37110000
+  },
+  {
+    "id": 7,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-25my-45side.png",
+    "name": "그랜저",
+    "price": 37110000
+  },
+  {
+    "id": 8,
+    "imgSrc": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-25my-45side.png",
+    "name": "그랜저",
+    "price": 37110000
+  }
+]
