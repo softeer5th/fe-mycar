@@ -1,10 +1,9 @@
-import { CarType, Product } from './model';
+import { CarType, CarModel } from './model';
 
 export interface CarTypeRepository {
   getCarTypes(): Promise<CarType[]>;
 }
 
-export interface ProductRepository {
-  getProducts(): Promise<Product[]>;
-  getProduct(carTypeCode: string): Promise<Product[]>;
+export interface CarModelRepository {
+  getCarModels(carTypeCode: CarModel['carTypeCode']): Promise<CarModel[]>;
 }

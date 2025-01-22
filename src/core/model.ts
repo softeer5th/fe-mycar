@@ -1,12 +1,12 @@
 export type CarType = {
-  carTypeCoed: string;
+  carTypeCode: string;
   carTypeName: string;
 };
 
-export type Product = {
+export type CarModel = {
   carTypeCode: string;
   carCode: string;
   carName: string;
-  carModel: number;
-  carImage: string;
+  carPrice: number;
+  carImgPath: string;
 };
