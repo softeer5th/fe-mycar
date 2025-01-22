@@ -1,4 +1,4 @@
-const Category = import( "../mycar/src/datas/carInfo.js");
+import { Category } from "../mycar/src/datas/carInfo.js";
 
 const carThumbnails = [
   {
