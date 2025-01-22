@@ -1,7 +1,7 @@
-import classNames from "classnames";
-import { useEffect, useState } from "react";
+import classNames from 'classnames';
+import { useEffect, useState } from 'react';
 
-export default function CarOptionList({selectedModel}) {
+export default function CarOptionList({ selectedModel }) {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -17,10 +17,13 @@ export default function CarOptionList({selectedModel}) {
   }, []);
 
   return (
-    <div className={classNames("h-full bg-slate-600 transition-all duration-500",
-      scrollPosition < 300 ? 'w-2/5' : 'w-3/4'
-    )}>
-
+    <div
+      className={classNames(
+        'bg-slate-600 transition-all duration-500 overflow-y-auto',
+        scrollPosition < 300 ? 'w-2/5' : 'w-3/4',
+      )}
+    >
+      <div style={{ height: '3000px' }}> </div>
     </div>
-  )
+  );
 }

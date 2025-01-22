@@ -10,10 +10,24 @@ const carThumbnails = [
   },
   {
     carType: Category.SEDAN,
+    carName: '쏘나타 디 엣지',
+    carPrice: '2,788만원~',
+    imageLink:
+      'https://www.hyundai.com/contents/repn-car/side-45/sonata-the-edge-25my-45side.png',
+  },
+  {
+    carType: Category.SEDAN,
     carName: '아반떼',
     carPrice: '1,964만원~',
     imageLink:
       'https://www.hyundai.com/contents/repn-car/side-45/avante-25my-45side.png',
+  },
+  {
+    carType: Category.SEDAN,
+    carName: '그랜저',
+    carPrice: '3,711만원~',
+    imageLink:
+      'https://www.hyundai.com/contents/repn-car/side-45/grandeur-25my-45side.png',
   },
   {
     carType: Category.N,
@@ -42,13 +56,6 @@ const carThumbnails = [
     carPrice: '2,500만원~',
     imageLink:
       'https://www.hyundai.com/contents/repn-car/side-45/tucson-25my-45side.png',
-  },
-  {
-    carType: Category.EV,
-    carName: '캐스퍼 일렉트릭',
-    carPrice: '2,990만원~',
-    imageLink:
-      'https://www.hyundai.com/contents/repn-car/side-45/casper_ev_45side.png',
   },
   {
     carType: Category.EV,
@@ -133,6 +140,13 @@ const carThumbnails = [
     carPrice: '4,847만원~',
     imageLink:
       'https://www.hyundai.com/contents/repn-car/side-45/porter2-electric-powergate-truck-24my-45side.png',
+  },
+  {
+    carType: Category.MPV,
+    carName: '스타리아 킨더',
+    carPrice: '3,643만원~',
+    imageLink:
+      'https://www.hyundai.com/contents/repn-car/side-45/staria-kinder-24my-45side.png',
   },
 ];
 
