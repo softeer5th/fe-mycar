@@ -3,6 +3,7 @@ import { http, HttpResponse } from 'msw';
 import ELECTRONIC_CAR_LIST from './data/electronicCarList.json';
 import N_CAR_LIST from './data/nCarList.json';
 import PASSENGER_CAR_LIST from './data/passengerCarList.json';
+import CAR_MODEL_LIST from './data/carModelList.json';
 
 const carListHandler = ({ request }: { request: Request }) => {
   const url = new URL(request.url);
@@ -31,4 +32,20 @@ const carListHandler = ({ request }: { request: Request }) => {
   }
 };
 
-export const worker = setupWorker(http.get('/car', carListHandler));
+// TODO: 자동차에 따라 엔진 종류 API 호출
+const carModelListHandler = ({ request }: { request: Request }) => {
+  const url = new URL(request.url);
+
+  const engineType = url.searchParams.get('engine') || '';
+
+  switch (engineType) {
+    case '2wd':
+    case '4wd':
+      return HttpResponse.json(CAR_MODEL_LIST[engineType]);
+  }
+};
+
+export const worker = setupWorker(
+  http.get('/car', carListHandler),
+  http.get('/car/model', carModelListHandler),
+);
