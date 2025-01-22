@@ -10,3 +10,10 @@ export type CarModel = {
   carPrice: number;
   carImgPath: string;
 };
+
+export type CarProduct = {
+  saleModelCode: string;
+  carModelPrice: number;
+  carTrimName: string;
+  carImagePath: string;
+};
