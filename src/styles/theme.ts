@@ -1,5 +1,7 @@
 export const colors = {
+  red400: '#e63312',
   beige400: '#e4dcd3',
+  beige350: '#f6f3f2',
   beige300: '#f6f3f2b3',
   blue300: '#007fab',
   blue400: '#007fa8',
@@ -46,6 +48,11 @@ export const fonts = {
     large: {
       'font-size': '20px',
       'line-height': '1.3',
+    },
+    sl: {
+      'font-size': '26px',
+      'line-height': '1',
+      'font-weight': '700',
     },
   },
 };
