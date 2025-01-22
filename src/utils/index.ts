@@ -7,3 +7,7 @@ export const formatNumberToMinMoney = (money: number) => {
   
   return `${dividedMoney.toLocaleString()}${UNIT_KR}${SUFFIX}`
 }
+
+export const formatNumberToTwoDigits = (num: number) => {
+  return num.toString().padStart(2, '0');
+}
