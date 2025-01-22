@@ -10,7 +10,8 @@ export default {
         primary:"#E5DCD3",
         secondary:"#F1EDE9",
         thirdary:"#F5F3F2",
-        buttonBlue:"#002C5F" 
+        buttonBlue:"#002C5F",
+        textBlue:"#007fa8"
       }
     },
   },

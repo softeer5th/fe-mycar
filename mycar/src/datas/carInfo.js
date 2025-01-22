@@ -18,6 +18,13 @@ export const carThumbnails = [
       'https://www.hyundai.com/contents/repn-car/side-45/porter2-live-fish-carrier-24my-45side.png',
   },
   {
+    carType: Category.SEDAN,
+    carName: '아반떼',
+    carPrice: '1,964만원~',
+    imageLink:
+      'https://www.hyundai.com/contents/repn-car/side-45/avante-25my-45side.png',
+  },
+  {
     carType: Category.N,
     carName: '아반떼 N',
     carPrice: '3,100만원~',
