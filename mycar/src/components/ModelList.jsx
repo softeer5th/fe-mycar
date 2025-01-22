@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { carDetailModels } from "../datas/carDetailModel";
 import ModelCard from "./ModelCard";
 
 export default function ModelList({ carName }) {

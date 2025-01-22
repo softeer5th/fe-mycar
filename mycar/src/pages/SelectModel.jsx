@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import CarThumbnail from '../components/CarThumbnail';
 import ModelSelect from '../components/ModelSelect';
-import { carThumbnails, Category } from '../datas/carInfo';
+import { Category } from '../datas/carInfo';
 import { Link } from 'react-router-dom';
 
 const initialCategory = Category.EV;

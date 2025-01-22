@@ -1,4 +1,4 @@
-export const carDetailModels = [
+const carDetailModels = [
     {
         carName: "아반떼",
         detailModels: [
@@ -135,3 +135,5 @@ export const carDetailModels = [
         ],
     },
 ];
+
+export default carDetailModels;
