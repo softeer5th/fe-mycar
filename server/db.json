@@ -238,6 +238,7 @@
         {
             "id": 1,
             "vehicleId": 1,
+            "name": "Standard",
             "spec": {
                 "engine": "수소",
                 "transmission": "자동",
@@ -250,6 +251,7 @@
         {
             "id": 2,
             "vehicleId": 1,
+            "name": "Premium",
             "spec": {
                 "engine": "전기",
                 "transmission": "자동",
@@ -258,104 +260,382 @@
             },
             "minPrice": 52000000,
             "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
-        
         },
         {
             "id": 3,
-            "vehicleId": 1,
+            "vehicleId": 2,
+            "name": "Basic",
             "spec": {
-            "engine": "전기",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "2WD"
+                "engine": "전기",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
             },
-            "minPrice": 53000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 45000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq5-45side.png"
         },
         {
             "id": 4,
-            "vehicleId": 1,
+            "vehicleId": 2,
+            "name": "Advanced",
             "spec": {
-            "engine": "수소",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "4WD"
+                "engine": "수소",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "4WD"
             },
-            "minPrice": 54000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 47000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq5-45side.png"
         },
         {
             "id": 5,
-            "vehicleId": 1,
+            "vehicleId": 3,
+            "name": "Smart",
             "spec": {
-            "engine": "전기",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "2WD"
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
             },
-            "minPrice": 55000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/avante-45side.png"
         },
         {
             "id": 6,
-            "vehicleId": 1,
+            "vehicleId": 3,
+            "name": "Modern",
             "spec": {
-            "engine": "수소",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "4WD"
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
             },
-            "minPrice": 56000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 22000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/avante-45side.png"
         },
         {
             "id": 7,
-            "vehicleId": 1,
+            "vehicleId": 3,
+            "name": "N Line",
             "spec": {
-            "engine": "전기",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "2WD"
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
             },
-            "minPrice": 57000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 24000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/avante-45side.png"
         },
         {
             "id": 8,
-            "vehicleId": 1,
+            "vehicleId": 4,
+            "name": "Standard",
             "spec": {
-            "engine": "수소",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "4WD"
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
             },
-            "minPrice": 58000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 25000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/sonata-45side.png"
         },
         {
             "id": 9,
-            "vehicleId": 1,
+            "vehicleId": 4,
+            "name": "Inspiration",
             "spec": {
-            "engine": "전기",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "2WD"
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
             },
-            "minPrice": 59000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 27000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/sonata-45side.png"
         },
         {
             "id": 10,
-            "vehicleId": 1,
+            "vehicleId": 5,
+            "name": "Luxury",
             "spec": {
-            "engine": "수소",
-            "transmission": "자동",
-            "bodyType": "세단",
-            "driveType": "4WD"
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
             },
-            "minPrice": 60000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-45side.png"
+        },{
+            "id": 11,
+            "vehicleId": 5,
+            "name": "Prestige",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
+            },
+            "minPrice": 32000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-45side.png"
+        },
+        {
+            "id": 12,
+            "vehicleId": 6,
+            "name": "Standard",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "2WD"
+            },
+            "minPrice": 25000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/kona-45side.png"
+        },
+        {
+            "id": 13,
+            "vehicleId": 6,
+            "name": "Premium",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "4WD"
+            },
+            "minPrice": 27000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/kona-45side.png"
+        },
+        {
+            "id": 14,
+            "vehicleId": 7,
+            "name": "Basic",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "2WD"
+            },
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/tucson-45side.png"
+        },
+        {
+            "id": 15,
+            "vehicleId": 7,
+            "name": "Advanced",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "4WD"
+            },
+            "minPrice": 32000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/tucson-45side.png"
+        },
+        {
+            "id": 16,
+            "vehicleId": 8,
+            "name": "Standard",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "2WD"
+            },
+            "minPrice": 35000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+        },
+        {
+            "id": 17,
+            "vehicleId": 8,
+            "name": "Premium",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "4WD"
+            },
+            "minPrice": 37000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+        },
+        {
+            "id": 18,
+            "vehicleId": 9,
+            "name": "Standard",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "자동",
+                "bodyType": "MPV",
+                "driveType": "2WD"
+            },
+            "minPrice": 40000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
+        },
+        {
+            "id": 19,
+            "vehicleId": 9,
+            "name": "Premium",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "자동",
+                "bodyType": "MPV",
+                "driveType": "4WD"
+            },
+            "minPrice": 42000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
+        },
+        {
+            "id": 20,
+            "vehicleId": 10,
+            "name": "Standard",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "소형트럭",
+                "driveType": "2WD"
+            },
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 21,
+            "vehicleId": 10,
+            "name": "Premium",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "소형트럭",
+                "driveType": "4WD"
+            },
+            "minPrice": 22000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 22,
+            "vehicleId": 11,
+            "name": "Standard",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "트럭",
+                "driveType": "2WD"
+            },
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/mighty-45side.png"
+        },
+        {
+            "id": 23,
+            "vehicleId": 11,
+            "name": "Premium",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "트럭",
+                "driveType": "4WD"
+            },
+            "minPrice": 32000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/mighty-45side.png"
+        },
+        {
+            "id": 24,
+            "vehicleId": 12,
+            "name": "Standard",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "버스",
+                "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/county-45side.png"
+        },
+        {
+            "id": 25,
+            "vehicleId": 12,
+            "name": "Premium",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "버스",
+                "driveType": "4WD"
+            },
+            "minPrice": 52000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/county-45side.png"
+        },
+        {
+            "id": 26,
+            "vehicleId": 13,
+            "name": "Standard",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "소형트럭",
+                "driveType": "2WD"
+            },
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 27,
+            "vehicleId": 13,
+            "name": "Premium",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "수동",
+                "bodyType": "소형트럭",
+                "driveType": "4WD"
+            },
+            "minPrice": 22000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 28,
+            "vehicleId": 14,
+            "name": "Standard",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "2WD"
+            },
+            "minPrice": 35000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+        },
+        {
+            "id": 29,
+            "vehicleId": 14,
+            "name": "Premium",
+            "spec": {
+                "engine": "가솔린",
+                "transmission": "자동",
+                "bodyType": "SUV",
+                "driveType": "4WD"
+            },
+            "minPrice": 37000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+        },
+        {
+            "id": 30,
+            "vehicleId": 15,
+            "name": "Standard",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "자동",
+                "bodyType": "MPV",
+                "driveType": "2WD"
+            },
+            "minPrice": 40000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
+        },
+        {
+            "id": 31,
+            "vehicleId": 15,
+            "name": "Premium",
+            "spec": {
+                "engine": "디젤",
+                "transmission": "자동",
+                "bodyType": "MPV",
+                "driveType": "4WD"
+            },
+            "minPrice": 42000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
         }
     ]
 }
-
