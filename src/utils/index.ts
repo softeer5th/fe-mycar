@@ -1,9 +1,14 @@
-export const formatNumberToMinMoney = (money: number) => {
-  const UNIT = 10000;
-  const UNIT_KR = '만원';
-  const SUFFIX = '~';
+export const formatNumberToMoney = ({money, unit, suffix=''}: {money: number, unit: number, suffix?: string}) => {
+  const moneyMap = new Map<number, string>([
+    [1, "원"],
+    [10000, "만원"],
+  ]);
   
-  const dividedMoney = Math.floor(money / UNIT);
+  const dividedMoney = Math.floor(money / unit);
   
-  return `${dividedMoney.toLocaleString()}${UNIT_KR}${SUFFIX}`
+  return `${dividedMoney.toLocaleString()}${moneyMap.get(unit)}${suffix}`
+}
+
+export const formatNumberToTwoDigits = (num: number) => {
+  return num.toString().padStart(2, '0');
 }

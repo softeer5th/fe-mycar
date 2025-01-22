@@ -1,5 +1,6 @@
 export interface Model {
     id: number;
+    name: string;
     vehicleId: number;
     spec: Spec;
     minPrice: number;
