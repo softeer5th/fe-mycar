@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
 import { Tab } from '../../components/Tab';
 import * as S from './CarBuild.styled';
-import useTabContext from '../../hooks/useTabContext';
+import CarModelList from './components/CarModelList';
 
 const TABS = [
   {
@@ -13,45 +12,6 @@ const TABS = [
     value: '4wd',
   },
 ];
-
-interface CarModel {
-  id: number;
-  imgSrc: string;
-  name: string;
-  price: number;
-  mode: string;
-  description: string;
-  isBest: boolean;
-  engineType: string;
-  options: {
-    defaultOptions: string[];
-    selectOptions?: string[];
-  };
-}
-
-const CarModelList = ({ engineType }: { engineType: string }) => {
-  const [carModelList, setCarModelList] = useState<CarModel[]>([]);
-  const { selectedTab } = useTabContext();
-
-  useEffect(() => {
-    const fetchCarModelList = async (engineType: string) => {
-      const res = await fetch(`/car/model?engine=${engineType}`);
-      const result = await res.json();
-      setCarModelList(result);
-    };
-
-    if (selectedTab === engineType) {
-      fetchCarModelList(engineType);
-    }
-  }, [selectedTab, engineType]);
-
-  return (
-    <ul>
-      <span>{carModelList[0]?.description}</span>
-      <img src={carModelList[0]?.imgSrc} />
-    </ul>
-  );
-};
 
 const CarBuild = () => {
   return (
