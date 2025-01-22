@@ -14,7 +14,7 @@ function formatTenThousandUnit(num: number) {
 const CarItem = ({ car }: CarItemProps) => {
   return (
     <S.CarItemLayout>
-      <S.CarItemLink to={`/car/${car.id}`}>
+      <S.CarItemLink to={`/car-build/${car.id}`}>
         <img src={car.imgSrc} alt="현대차" />
         <S.Name>{car.name}</S.Name>
         <S.Price>{formatTenThousandUnit(car.price)}만원</S.Price>
