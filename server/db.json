@@ -61,7 +61,7 @@
             "name": "그랜드 스타렉스",
             "type": "MPV",
             "minPrice": 40000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grand-starex-45side.png"
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
         },
         {
             "id": 10,
@@ -89,7 +89,7 @@
             "name": "포터",
             "type": "소형트럭&택시",
             "minPrice": 20000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter-45side.png"
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
         },
         {
             "id": 14,
@@ -103,7 +103,7 @@
             "name": "그랜드 스타렉스",
             "type": "MPV",
             "minPrice": 40000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grand-starex-45side.png"
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
         },
         {
             "id": 16,
@@ -131,7 +131,7 @@
             "name": "포터",
             "type": "소형트럭&택시",
             "minPrice": 20000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter-45side.png"
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
         },
         {
             "id": 20,
@@ -145,7 +145,7 @@
             "name": "그랜드 스타렉스",
             "type": "MPV",
             "minPrice": 40000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grand-starex-45side.png"
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
         },
         {
             "id": 22,
@@ -173,7 +173,65 @@
             "name": "포터",
             "type": "소형트럭&택시",
             "minPrice": 20000000,
-            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter-45side.png"
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 26,
+            "name": "쏘나타 디 엣지",
+            "type": "승용",
+            "minPrice": 25000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/sonata-45side.png"
+        },
+        {
+            "id": 27,
+            "name": "그랜저",
+            "type": "승용",
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/grandeur-45side.png"
+        },
+        {
+            "id": 28,
+            "name": "코나",
+            "type": "SUV",
+            "minPrice": 25000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/kona-45side.png"
+        },
+        {
+            "id": 29,
+            "name": "투싼",
+            "type": "SUV",
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/tucson-45side.png"
+        },
+        {
+            "id": 30,
+            "name": "팰리세이드",
+            "type": "SUV",
+            "minPrice": 35000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/palisade-45side.png"
+        },
+        {
+            "id": 31,
+            "name": "그랜드 스타렉스",
+            "type": "MPV",
+            "minPrice": 40000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
+        },
+        {
+            "id": 32,
+            "name": "포터2",
+            "type": "소형트럭&택시",
+            "minPrice": 20000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/porter2-45side.png"
+        },
+        {
+            "id": 33,
+            "name": "마이티",
+            "type": "트럭",
+            "minPrice": 30000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/mighty-45side.png"
+        },
+        {
         }
     ],
     "models": [
