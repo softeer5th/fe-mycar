@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { Vehicle } from '../../../domain/Vehicle';
 import { formatNumberToMinMoney } from '../../../utils';
+import { Link } from 'react-router';
 
-const VehicleCard = ({name, minPrice, imageUrl}: Vehicle) => {
+const VehicleCard = ({id, name, minPrice, imageUrl}: Vehicle) => {
     
   return (
-    <Container>
+    <Container to={`model-selection/${id}`}>
       <Image src={imageUrl} alt={name} />
       <ContentContainer>
         <Title>{name}</Title>
@@ -15,7 +16,7 @@ const VehicleCard = ({name, minPrice, imageUrl}: Vehicle) => {
   );
 }
 
-const Container = styled.div`
+const Container = styled(Link)`
     display: flex;
     flex-direction: column;
     gap: 10px;
