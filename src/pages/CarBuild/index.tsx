@@ -1,6 +1,6 @@
 import { Tab } from '../../components/Tab';
 import * as S from './CarBuild.styled';
-import CarModelList from './components/CarModelList';
+import CarModelContainer from './components/CarModelContainer';
 
 const TABS = [
   {
@@ -20,9 +20,9 @@ const CarBuild = () => {
         <button>01 모델 선택</button>
         <button>02 내 차 만들기</button>
       </header>
-      <div>
-        <span>구동방식</span>
+      <S.TabRoot>
         <Tab.root defaultValue={TABS[0].value}>
+          <S.TabTitle>구동방식</S.TabTitle>
           <S.TabList>
             {TABS.map((tab) => (
               <li key={tab.value}>
@@ -32,13 +32,11 @@ const CarBuild = () => {
           </S.TabList>
           {TABS.map((tab) => (
             <Tab.content value={tab.value} key={tab.value}>
-              <CarModelList engineType={tab.value} />
+              <CarModelContainer engineType={tab.value} />
             </Tab.content>
           ))}
         </Tab.root>
-        <div>엔진탭</div>
-      </div>
-      <div>모델 비교 | 전체 모델</div>
+      </S.TabRoot>
       <footer>표시된 가격 어쩌구</footer>
     </div>
   );

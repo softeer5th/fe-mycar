@@ -21,3 +21,13 @@ export const TabList = styled.ul`
     }
   }
 `;
+
+export const TabTitle = styled.span`
+  ${({ theme }) => theme.fonts.subTitle}
+`;
+
+export const TabRoot = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+`;

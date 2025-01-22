@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
+import CarModelList from './CarModelList';
 import useTabContext from '../../../../hooks/useTabContext';
-import CarModelItem from './CarModelItem';
 import { CarModel } from '../../CarBuild.types';
 
-const CarModelList = ({ engineType }: { engineType: string }) => {
+const CarModelContainer = ({ engineType }: { engineType: string }) => {
   const [carModelList, setCarModelList] = useState<CarModel[]>([]);
   const { selectedTab } = useTabContext();
 
@@ -20,12 +20,15 @@ const CarModelList = ({ engineType }: { engineType: string }) => {
   }, [selectedTab, engineType]);
 
   return (
-    <ul>
-      {carModelList.map((carModel) => (
-        <CarModelItem key={carModel.id} carModel={carModel} />
-      ))}
-    </ul>
+    <>
+      <div>
+        <span>모델 비교</span>
+        <span>|</span>
+        <span>전체 모델 ({carModelList.length})</span>
+      </div>
+      <CarModelList carModelList={carModelList} />
+    </>
   );
 };
 
-export default CarModelList;
+export default CarModelContainer;
