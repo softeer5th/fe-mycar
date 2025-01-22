@@ -20,7 +20,7 @@ const CarSection = () => {
         </S.TabBar>
         {TABS.map((tab) => (
           <Tab.content value={tab.value}>
-            <CarList selectedTab={tab.value} />
+            <CarList tab={tab.value} />
           </Tab.content>
         ))}
       </Tab.root>

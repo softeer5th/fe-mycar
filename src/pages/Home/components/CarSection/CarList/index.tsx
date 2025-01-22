@@ -3,12 +3,14 @@ import CarItem from './CarItem';
 import * as S from './CarList.styled';
 import { Car } from '../../../Home.types';
 import { getCarList } from '../../../../../api/car';
+import useTabContext from '../../../../../hooks/useTabContext';
 
 interface CarListProps {
-  selectedTab: string;
+  tab: string;
 }
 
-const CarList = ({ selectedTab }: CarListProps) => {
+const CarList = ({ tab }: CarListProps) => {
+  const { selectedTab } = useTabContext();
   const [carList, setCarList] = useState<Car[]>([]);
 
   useEffect(() => {
@@ -17,8 +19,10 @@ const CarList = ({ selectedTab }: CarListProps) => {
       setCarList(data);
     };
 
-    fetchCarList(selectedTab);
-  }, [selectedTab]);
+    if (tab === selectedTab) {
+      fetchCarList(selectedTab);
+    }
+  }, [selectedTab, tab]);
 
   return (
     <S.CarListLayout>
