@@ -1,7 +1,6 @@
-import { React } from 'react';
 import { Header } from '../../components/header/Header';
 import { useParams } from 'react-router-dom';
-import { Tabbar } from '../../components/header/header.styled';
+// import { Tabbar } from '../../components/header/header.styled';
 import styled from 'styled-components';
 import { PreviewContainer } from './components/PreviewContainer';
 export default function Option() {

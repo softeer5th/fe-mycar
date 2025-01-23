@@ -2,7 +2,7 @@ import * as S from './PreviewContainer.styled';
 import { useState } from 'react';
 
 export const PreviewContainer = () => {
-  const [preview, setPreview] = useState({
+  const preview = Object.freeze({
     exterior: {
       color: 'black pearl',
       url: '/src/assets/car_making_preview.png',
