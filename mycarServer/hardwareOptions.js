@@ -17,7 +17,7 @@ export const hardwareOptionList = [
   {
     optionImgSrc: 'https://www.hyundai.com/contents/spec/NE-24/ne_056_s.jpg',
     optionName: '스타일',
-    optionPrice: 12000000,
+    optionPrice: 1200000,
   },
   {
     optionImgSrc: 'https://www.hyundai.com/contents/spec/NE-24/ne_032_video_s.jpg',

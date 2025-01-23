@@ -279,7 +279,7 @@ const carDetailModels = [
       {
         carName: '활어 운반 차',
         modelName: 'Smart',
-        price: 352700000,
+        price: 3952700000,
         imageSrc: 'https://www.hyundai.com/contents/vr360/M586/trim/LM.png',
         interiorSrc: 'https://www.hyundai.com/contents/vr360/NE04/interior/I58/img-interior.png',
       },

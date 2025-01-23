@@ -13,7 +13,7 @@ export default function CarView({ selectedModel, price, colorIndex }) {
     <div className='flex-1 flex-col h-full px-16 py-8'>
       <h1 className='text-3xl font-bold'>{`${selectedModel.carName} - ${selectedModel.modelName}`}</h1>
       <div>
-        <div className=' mt-4 flex justify-between'>
+        <div className=' mt-4 flex flex-wrap justify-between'>
           <div className=' flex justify-center items-center text-buttonBlue'>
             {selectedModel.catalogSrc && (
               <Link onClick={() => openCatalog(selectedModel.catalogSrc)}>{'카탈로그 >'}</Link>
