@@ -11,7 +11,7 @@ const CarModelItem = ({ carModel }: CarModelItemProps) => {
       <S.ItemHeader>
         <S.ModelTitle>{carModel.model}</S.ModelTitle>
         <S.ModelPrice>{carModel.price.toLocaleString()}원</S.ModelPrice>
-        {carModel.isBest ? <S.BestBadge>isBest</S.BestBadge> : null}
+        {carModel.isBest ? <S.BestBadge>Best</S.BestBadge> : null}
       </S.ItemHeader>
       <img src={carModel.imgSrc} />
       <S.DescriptionContainer>
