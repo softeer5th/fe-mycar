@@ -1,22 +1,22 @@
-import { useState } from 'react';
 import type { ReactNode } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 interface TabProps {
-    data: TabData[];
+  data: TabData[];
 }
 
 interface TabData {
-    label: string;
-    content: ReactNode;
+  label: string;
+  content: ReactNode;
 }
 
 const Tab = ({ data }: TabProps) => {
   const [selectedTab, setSelectedTab] = useState(data[0].label);
-  const labels = data.map(({label}) => label);
+  const labels = data.map(({ label }) => label);
   const handleClickChangeTab = (label: string) => {
     setSelectedTab(label);
-  }
+  };
 
   return (
     <div>
@@ -38,16 +38,16 @@ const Tab = ({ data }: TabProps) => {
         </LabelListContents>
       </LabelListContainer>
       <div>
-        {data.find(({label}) => label === selectedTab)?.content}
+        {data.find(({ label }) => label === selectedTab)?.content}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const LabelListContainer = styled.div`
     width: 100%;
     border-bottom: 1px solid ${(props) => props.theme.color['border']};
-`
+`;
 
 const LabelListContents = styled.div`
     max-width: 1120px;
@@ -57,11 +57,11 @@ const LabelListContents = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 70px;
-`
+`;
 
 const LabelTitle = styled.h3 `
     ${(props) => props.theme.typo.body1};
-` 
+`; 
 
 const LabelList = styled.ul`
     display: flex;
@@ -69,22 +69,23 @@ const LabelList = styled.ul`
 
     flex-wrap: nowrap;
     justify-content: space-between;
-`
+`;
 
 const Label = styled.li`
     margin: 0px 10px;
-`
+`;
 
-const LabelButton = styled.button<{selected: boolean}>`
+const LabelButton = styled.button<{ selected: boolean }>`
     ${(props) => props.theme.typo.label};
-    color: ${(props) => props.selected ? props.theme.color.highlight : props.theme.color['text-sub']};
-`
+    color: ${(props) => props.selected ? 
+      props.theme.color.highlight : props.theme.color['text-sub']};
+`;
 
 const LabelCheckboxContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 0.25rem;
-`
+`;
 
 const LabelCheckbox = styled.button`
     display: inline-block;
@@ -106,10 +107,10 @@ const LabelCheckbox = styled.button`
       border-right: 0;
       transform: rotate(-45deg);
     }
-`
+`;
 
 const LabelCheckboxContent = styled.span`
   ${(props) => props.theme.typo.label};
-`
+`;
 
 export default Tab;

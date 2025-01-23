@@ -1,20 +1,18 @@
 import styled from 'styled-components';
 
 interface BannerProps {
-    title: string;
-    subTitle: string;
+  title: string;
+  subTitle: string;
 }
 
-const Banner = ({title, subTitle}: BannerProps) =>{
-  return (
-    <OuterContainer>
-      <InnerContainer>
-        <Title>{title}</Title>
-        <SubTitle>{subTitle}</SubTitle>
-      </InnerContainer>
-    </OuterContainer>
-  )
-}
+const Banner = ({ title, subTitle }: BannerProps) =>(
+  <OuterContainer>
+    <InnerContainer>
+      <Title>{title}</Title>
+      <SubTitle>{subTitle}</SubTitle>
+    </InnerContainer>
+  </OuterContainer>
+);
 
 const OuterContainer = styled.div`
     width: 100%;

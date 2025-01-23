@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle<{ $whiteColor?: boolean; }>`
+export const GlobalStyle = createGlobalStyle<{ $whiteColor?: boolean }>`
  html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,9 +54,15 @@ table {
 	border-spacing: 0;
 }
 button {
-  background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer
+  background: inherit ; 
+  border:none; 
+  box-shadow:none; 
+  border-radius:0;
+  padding:0; 
+  overflow:visible; 
+  cursor:pointer;
 }
 a {
   text-decoration: none;
 }
-`
+`;

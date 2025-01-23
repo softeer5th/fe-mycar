@@ -1,25 +1,23 @@
-import styled from "styled-components";
-import { Model } from "../../../domain/Model";
-import { formatNumberToMoney } from "../../../utils";
-import Button from "../../../components/Button";
+import styled from 'styled-components';
 
-const ModelCard = ({id, vehicleId, name, spec, minPrice, imageUrl}: Model) => { 
+import Button from '../../../components/Button';
+import type { Model } from '../../../domain/Model';
+import { formatNumberToMoney } from '../../../utils';
 
-    return (
-        <ModelCardContainer>
-            <ModelTitle>
-                <ModelName>
-                    {name}
-                </ModelName>
-                <ModelPrice>
-                    {formatNumberToMoney({money: minPrice, unit: 1})}
-                </ModelPrice>
-            </ModelTitle>
-            <Image src={imageUrl} />
-            <Button>내 차 만들기</Button>
-        </ModelCardContainer>
-    )
-}
+const ModelCard = ({ id, vehicleId, name, spec, minPrice, imageUrl }: Model) => (
+  <ModelCardContainer>
+    <ModelTitle>
+      <ModelName>
+        {name}
+      </ModelName>
+      <ModelPrice>
+        {formatNumberToMoney({ money: minPrice, unit: 1 })}
+      </ModelPrice>
+    </ModelTitle>
+    <Image src={imageUrl} />
+    <Button>내 차 만들기</Button>
+  </ModelCardContainer>
+);
 
 const ModelCardContainer = styled.div`
     display: flex;
@@ -28,23 +26,23 @@ const ModelCardContainer = styled.div`
     height: 100%;
     padding: 30px;
     max-width: 280px;
-    background-color: ${props => props.theme.color["surface-alt"]};
-`
+    background-color: ${props => props.theme.color['surface-alt']};
+`;
 
 const ModelTitle = styled.div`
     display: flex;
     flex-direction: column;
-`
+`;
 
 const ModelName = styled.span`
     ${props => props.theme.typo.heading3};
-`
+`;
 
 const ModelPrice = styled.span`
     ${props => props.theme.typo.heading4};
-`
+`;
 
 const Image = styled.img`
     width: 100%;
-`
+`;
 export default ModelCard;

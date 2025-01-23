@@ -1,20 +1,18 @@
 interface Font {
-    font: string;
-    weight: number;
-    size: number;
-    letterSpacing?: string;
-    lineHeight: number | string;
-  }
+  font: string;
+  weight: number;
+  size: number;
+  letterSpacing?: string;
+  lineHeight: number | string;
+}
   
-const FONT = ({ font, weight, size, letterSpacing, lineHeight }: Font): string => {
-  return `
+const FONT = ({ font, weight, size, letterSpacing, lineHeight }: Font): string => `
       font-family : "${font}";
       font-weight : ${weight};
       font-size : ${size}px;
-      letter-spacing: ${letterSpacing ? `${letterSpacing}px`: 'normal'};
+      letter-spacing: ${letterSpacing ? `${letterSpacing}px` : 'normal'};
       line-height : ${typeof lineHeight === 'string' ? lineHeight : lineHeight + 'px'};
       `;
-};
   
 export const typo = {
   heading1: FONT({
@@ -65,4 +63,4 @@ export const typo = {
     letterSpacing: '-.4',
     weight: 400,
   }),
-}
+};

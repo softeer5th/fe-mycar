@@ -1,12 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router';
+import { ThemeProvider } from 'styled-components';
+
+import App from './App.tsx';
 import CompletionPage from './pages/CompletionPage';
 import ModelSelectionPage from './pages/ModelSelectionPage';
 import OptionSelectionPage from './pages/OptionSelectionPage';
 import VehicleSelectionPage from './pages/VehicleSelectionPage';
-import { ThemeProvider } from 'styled-components';
 import { GlobalFont, GlobalStyle, theme } from './theme';
 
 createRoot(document.getElementById('root')!).render(
@@ -16,13 +17,13 @@ createRoot(document.getElementById('root')!).render(
       <GlobalFont />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<App />} />
-          <Route path='vehicle-selection' element={<VehicleSelectionPage />}/>
-          <Route path='model-selection/:vehicleId' element={<ModelSelectionPage />} />
-          <Route path='option-selection' element={<OptionSelectionPage />} />
-          <Route path='completion' element={<CompletionPage />} />
+          <Route element={<App />} path='/' />
+          <Route element={<VehicleSelectionPage />} path='vehicle-selection'/>
+          <Route element={<ModelSelectionPage />} path='model-selection/:vehicleId' />
+          <Route element={<OptionSelectionPage />} path='option-selection' />
+          <Route element={<CompletionPage />} path='completion' />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
   </StrictMode>,
-)
+);
