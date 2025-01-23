@@ -22,21 +22,21 @@ export const SliderWrapper = styled.div`
     opacity: 0.7; /* hover 상태에서 색상 */
   }
   .slick-prev {
-      left: 0;
+    left: 0;
   }
-    
+
   .slick-next {
-      right: 0;
+    right: 0;
   }
-    
+
   .slick-prev,
   .slick-next {
-      z-index: 1;
+    z-index: 1;
     background-color: grey;
     width: 44px;
     height: 44px;
     margin-top: -82px;
-    background-color: rgba(31, 45, 61, . 23);
+    background-color: rgba(31, 45, 61, 0.23);
   }
   .slick-prev:before {
     content: "<";
