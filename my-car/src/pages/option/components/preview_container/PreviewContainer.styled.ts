@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
+export const PreviewWrapper = styled.div`
+  flex: 2; // 2에서 1로 변경
+  position: sticky;
+  top: 139px;
+  height: calc(100vh - 139px);
+`;
+
 export const PreviewContainer = styled.div`
-  position: fixed;
   display: flex;
   flex-direction: column;
   padding: 30px 80px 0 80px;
-`;
 
-export const PreviewWrapper = styled.div`
-  display: flex;
-  flex: 2;
+  max-width: 900px; // 최대 너비 설정
 `;
 
 export const HeaderContainer = styled.div`
