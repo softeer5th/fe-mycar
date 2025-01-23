@@ -34,7 +34,7 @@ export default function SelectOption() {
   if (isLoading) return;
   if (error) return;
   return (
-    <div className='h-dvh'>
+    <div className='h-dvh' style={{ minWidth: '800px' }}>
       <OptionPageHeader step={step} setStep={setStep} />
       <AnimatePresence initial={false} mode='wait'>
         {step === 1 ? (

@@ -1,8 +1,9 @@
 import classNames from 'classnames';
 import { useEffect, useRef, useState } from 'react';
 import ColorOptions from './ColorOptions';
+import HardwareOptions from './HardwareOptions';
 
-export default function CarOptionList({ selectedModel, colorIndex, setColorIndex }) {
+export default function CarOptionList({ selectedModel, colorIndex, setColorIndex, setCarPrice }) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const scrollRef = useRef(null);
 
@@ -24,12 +25,13 @@ export default function CarOptionList({ selectedModel, colorIndex, setColorIndex
     <div
       ref={scrollRef}
       className={classNames(
-        'bg-slate-600 transition-all duration-500 overflow-y-auto',
-        scrollPosition < 300 ? 'w-2/5' : 'w-3/4',
+        ' transition-all duration-500 overflow-y-auto',
+        scrollPosition < 1500 ? 'w-2/5' : 'w-3/4',
       )}
     >
-      <div style={{ height: '3000px' }}>
+      <div>
         <ColorOptions colorIndex={colorIndex} setColorIndex={setColorIndex} />
+        <HardwareOptions setPrice={setCarPrice} />
       </div>
     </div>
   );

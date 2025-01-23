@@ -10,7 +10,7 @@ export default function ColorOptions({ colorIndex, setColorIndex }) {
   });
 
   return (
-    <div className='flex flex-col mx-20 mt-20'>
+    <div className='flex flex-col mx-20 mt-20 overflow-hidden' style={{ height: '1600px' }}>
       <h2 className='text-2xl  font-bold'>색상</h2>
       {data && (
         <>

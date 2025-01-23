@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import { carThumbnails } from './carInfo.js';
 import carDetailModels from './carDetailModel.js';
 import { carColorList } from './carColors.js';
+import { hardwareOptionList } from './hardwareOptions.js';
 
 const app = express();
 const port = 3000; // 사용할 포트 번호
@@ -37,6 +38,10 @@ app.get('/carDetailModels/:modelName', (req, res) => {
 
 app.get('/carColorList', (req, res) => {
   res.send(carColorList);
+});
+
+app.get('/hardwareOptionList', (req, res) => {
+  res.send(hardwareOptionList);
 });
 
 // 서버 시작
