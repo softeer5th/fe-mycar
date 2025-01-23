@@ -4,7 +4,7 @@ import carModelSelectionData from "./data/carModelSelection.ts"
 
 export const url = "http://localhost:"
 export const port = '5173'
-const HYUNDAI_URL = 'https://www.hyundai.com'
+const hHYUNDAI_URL = 'https://www.hyundai.com'
 
 export const handlers = [
     http.get(`${url}${port}/api/home`, () => {
