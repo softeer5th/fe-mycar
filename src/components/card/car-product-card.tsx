@@ -1,17 +1,25 @@
+import { CarProduct } from '../../core/model';
+import { numberToWon } from '../../utils/numberToWon';
 import PrimaryButton from '../button/primary-button';
 
-type CarProductCardProps = {
+export type CarProductCardProps = {
   handleButtonClick: () => void;
+  carProduct: CarProduct;
 };
 
-const CarProductCard = ({ handleButtonClick }: CarProductCardProps) => {
+const CarProductCard = ({
+  carProduct,
+  handleButtonClick,
+}: CarProductCardProps) => {
   return (
-    <div className="w-1/2 max-w-[440px] h-full bg-[#f6f3f2] p-[30px] text-left border-[#f6f3f2] border-[3px]">
-      <h4 className=" mt-2 text-[22px]">E-Value +(스탠다드) 18인치</h4>
-      <span className=" mt-2 text-[22px]">52,090,000 원</span>
+    <div className=" min-w-[310px] h-full bg-[#f6f3f2] p-[30px] text-left border-[#f6f3f2] border-[3px] ">
+      <h4 className=" mt-2 text-[22px]">{carProduct.carTrimName}</h4>
+      <span className=" mt-2 text-[22px]">
+        {numberToWon({ type: 'full', amount: carProduct.carModelPrice })}
+      </span>
       <div>
         <button className=" max-w-[290px] mt-[50px] mx-auto mb-0 ">
-          <img src="" />
+          <img src={carProduct.carImagePath} />
         </button>
         <div className=" w-full flex justify-between mt-[30px] items-center">
           <div className=" text-[16px] ml-[10px] text-[#666] ">2WD</div>
@@ -19,11 +27,23 @@ const CarProductCard = ({ handleButtonClick }: CarProductCardProps) => {
             상세 품목
           </button>
         </div>
-        <div className=" mt-5 mb-10 border-t border-[#ccc]">
+        <div className=" mt-5 mb-10 border-t border-[#ccc] ">
           <ul className=" flex justify-between">
-            <li className=" px-[10px] text-center">asd</li>
-            <li className=" px-[10px] text-center">asd</li>
-            <li className=" px-[10px] text-center">asd</li>
+            <li className=" px-[10px] text-center">
+              <img
+                src={carProduct.carImagePath.split('.png')[0] + '-USP-001.png'}
+              />
+            </li>
+            <li className=" px-[10px] text-center">
+              <img
+                src={carProduct.carImagePath.split('.png')[0] + '-USP-002.png'}
+              />
+            </li>
+            <li className=" px-[10px] text-center">
+              <img
+                src={carProduct.carImagePath.split('.png')[0] + '-USP-003.png'}
+              />
+            </li>
           </ul>
         </div>
         <PrimaryButton text="내 차 만들기 " onButtonClick={handleButtonClick} />
