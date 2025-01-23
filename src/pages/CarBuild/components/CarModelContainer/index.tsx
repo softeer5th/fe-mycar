@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CarModelList from './CarModelList';
 import useTabContext from '../../../../hooks/useTabContext';
 import { CarModel } from '../../CarBuild.types';
@@ -21,6 +21,10 @@ const CarModelContainer = ({ engineType }: { engineType: string }) => {
     setCurrentIdx((prev) => (prev === maxIdx ? startIdx : prev + 1));
   };
 
+  const handleClickIndexButton = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setCurrentIdx(Number(e.currentTarget.value));
+  };
+
   useEffect(() => {
     const fetchCarModelList = async (engineType: string) => {
       const res = await fetch(`/car/model?engine=${engineType}`);
@@ -40,11 +44,24 @@ const CarModelContainer = ({ engineType }: { engineType: string }) => {
         <span>|</span>
         <span>전체 모델 ({carModelList.length})</span>
       </div>
-      <S.CarModelCarousel>
-        <S.CarouselPrevButton onClick={handleClickPrevButton}>{'<'}</S.CarouselPrevButton>
-        <S.CarouselNextButton onClick={handleClickNextButton}>{'>'}</S.CarouselNextButton>
-        <CarModelList carModelList={carModelList} currentIdx={currentIdx} />
-      </S.CarModelCarousel>
+
+      <S.CarModelCarouselContainer>
+        <S.IndexButtonWrapper>
+          {Array.from({ length: maxIdx + 1 }).map((_, idx) => (
+            <S.IndexButton
+              key={idx}
+              value={idx}
+              onClick={handleClickIndexButton}
+              $isSelected={idx === currentIdx}
+            ></S.IndexButton>
+          ))}
+        </S.IndexButtonWrapper>
+        <S.CarModelCarousel>
+          <S.CarouselPrevButton onClick={handleClickPrevButton}>{'<'}</S.CarouselPrevButton>
+          <S.CarouselNextButton onClick={handleClickNextButton}>{'>'}</S.CarouselNextButton>
+          <CarModelList carModelList={carModelList} currentIdx={currentIdx} />
+        </S.CarModelCarousel>
+      </S.CarModelCarouselContainer>
     </>
   );
 };

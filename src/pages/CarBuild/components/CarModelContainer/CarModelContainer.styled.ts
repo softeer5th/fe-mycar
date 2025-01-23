@@ -1,9 +1,30 @@
 import styled from 'styled-components';
 
+export const CarModelCarouselContainer = styled.div`
+  position: relative;
+`;
+
+export const IndexButtonWrapper = styled.div`
+  display: flex;
+  position: absolute;
+  gap: 0.8rem;
+  top: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
+export const IndexButton = styled.button<{ $isSelected: boolean }>`
+  background-color: ${({ theme, $isSelected }) =>
+    $isSelected ? theme.colors.blue400 : theme.colors.gray300};
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+`;
+
 export const CarModelCarousel = styled.div`
   position: relative;
   max-width: 140rem;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0 auto;
 `;
 
