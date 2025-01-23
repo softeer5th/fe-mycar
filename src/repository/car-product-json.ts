@@ -5,7 +5,7 @@ type CarProductJson = {
   saleModelCode: string;
   carModelPrice: string;
   carTrimName: string;
-  carImageCode: string;
+  carImgCode: string;
 };
 
 export default class CarProductJsonRepository implements CarProductRepository {
@@ -17,7 +17,7 @@ export default class CarProductJsonRepository implements CarProductRepository {
       saleModelCode: carProduct.saleModelCode,
       carModelPrice: Number(carProduct.carModelPrice),
       carTrimName: carProduct.carTrimName,
-      carImagePath: `https://www.hyundai.com/contents/vr360/${carCode}/trim/${carProduct.carImageCode}.png`,
+      carImagePath: `https://www.hyundai.com/contents/vr360/${carCode}/trim/${carProduct.carImgCode}.png`,
     }));
   }
 }
