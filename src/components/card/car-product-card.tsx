@@ -13,12 +13,17 @@ const CarProductCard = ({
 }: CarProductCardProps) => {
   return (
     <div className=" w-[25%] h-full bg-[#f6f3f2] p-[30px] text-left border-[#f6f3f2] border-[3px] ">
-      <h4 className=" mt-2 text-[22px]">{carProduct.carTrimName}</h4>
+      <h4 className=" mt-2 h-[66px] text-[22px] break-keep">
+        {carProduct.carTrimName}
+      </h4>
       <span className=" mt-2 text-[22px]">
         {numberToWon({ type: 'full', amount: carProduct.carModelPrice })}
       </span>
       <div>
-        <button className=" max-w-[290px] mt-[50px] mx-auto mb-0 ">
+        <button
+          onClick={handleButtonClick}
+          className=" max-w-[290px] mt-[50px] mx-auto mb-0 "
+        >
           <img src={carProduct.carImagePath} />
         </button>
         <div className=" w-full flex justify-between mt-[30px] items-center">
