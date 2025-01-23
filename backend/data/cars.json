@@ -2,66 +2,79 @@
     "carList": [
         {
             "name": "캐스퍼 일렉트릭",
+            "code": "casper_ev",
             "cost": 2990,
             "img": "/images/cars/casper_ev_45side.png"
         },
         {
             "name": "넥쏘",
+            "code": "nexo",
             "cost": 6950,
             "img": "/images/cars/nexo-24my-45side.png"
         },
         {
             "name": "코나 Electric",
+            "code": "kona_ev",
             "cost": 4142,
             "img": "/images/cars/kona-electric-24my-45side.png"
         },
         {
             "name": "아이오닉 6",
+            "code": "ioniq6",
             "cost": 4695,
             "img": "/images/cars/ioniq6-24my-45side.png"
         },
         {
             "name": "더 뉴 아이오닉 5",
+            "code": "the_new_ioniq5",
             "cost": 4700,
             "img": "/images/cars/the-new-ioniq5-24pe-45side.png"
         },
         {
             "name": "ST1 내장탑차",
+            "code": "st1_inner_top",
             "cost": 5980,
             "img": "/images/cars/st1-24lc-45side.png"
         },
         {
             "name": "ST1 냉동탑차",
+            "code": "st1_freezer",
             "cost": 6815,
             "img": "/images/cars/st1-freezer-truck-24lc-45side.png"
         },
         {
             "name": "ST1 샤시",
+            "code": "st1_chassiscab",
             "cost": 5595,
             "img": "/images/cars/st1-chassiscab-25my-45side.png"
         },
         {
             "name": "ST1 특장 하이탑",
+            "code": "st1_special_high_top",
             "cost": 5740,
             "img": "/images/cars/st1-25my-45side.png"
         },
         {
             "name": "포터 II Electric",
+            "code": "porter_2_ev",
             "cost": 4395,
             "img": "/images/cars/porter2-electric-45side.png"
         },
         {
             "name": "포터 II Electric 내장탑차",
+            "code": "porter_2_ev_inner_top",
             "cost": 4805,
             "img": "/images/cars/porter2-electric-built-in-truck-24my-45side.png"
         },
         {
             "name": "포터 II Electric 윙바디",
+            "code": "porter_2_ev_wingbody",
             "cost": 5006,
             "img": "/images/cars/porter2-electric-wingbody-24my-45side.png"
         },
         {
             "name": "포터 II Electric 파워게이트",
+            "code": "porter_2_ev_powergate",
             "cost": 4847,
             "img": "/images/cars/porter2-electric-powergate-truck-24my-45side.png"
         }
