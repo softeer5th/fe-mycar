@@ -89,7 +89,6 @@ video {
   border: 0;
   font-size: 16px;
   line-height: 1;
-  font-size: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -134,6 +133,10 @@ table {
 }
 
 body {
+  font-family: "HyundaiSansTextKR";
+}
+
+a {
   font-family: "HyundaiSansHeadKR";
 }
 
@@ -146,14 +149,27 @@ body {
 @font-face {
   font-family: "HyundaiSansHeadKR";
   font-weight: 500;
-  src: url("./assets/HyundaiSansHeadOffice-Medium.woff2");
+  src: url("./assets/HyundaiSansHeadKRMedium.10da3b3.woff2");
 }
 
 @font-face {
   font-family: "HyundaiSansHeadKR";
   font-weight: 400;
-  src: url("./assets/HyundaiSansHeadOffice-Regular.woff2");
+  src: url("./assets/HyundaiSansHeadKRRegular.6b636ef.woff2");
 }
+
+@font-face {
+  font-family: "HyundaiSansTextKR";
+  font-weight: 400;
+  src: url("./assets/HyundaiSansTextKRRegular.e5673b8.woff2");
+}
+
+@font-face {
+  font-family: "HyundaiSansTextKR";
+  font-weight: 500;
+  src: url("./assets/HyundaiSansTextKRMedium.9956f07.woff2");
+}
+
 
 button {
   background-color: transparent;
