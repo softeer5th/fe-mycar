@@ -23,9 +23,9 @@ const ModelCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
+    max-width: 280px;
     height: 100%;
     padding: 30px;
-    max-width: 280px;
     background-color: ${props => props.theme.color['surface-alt']};
 `;
 

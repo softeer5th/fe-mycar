@@ -12,9 +12,10 @@ const Button = ({ children }: ButtonProps) => (
 const ButtonContainer = styled.button`
     width: 100%;
     height: 50px;
-    background-color: ${props => props.theme.color['blue-dark']};
-    color: ${props => props.theme.color['surface-default']};
-    ${props => props.theme.typo.label};
+    color: ${(props) => props.theme.color['surface-default']};
+    background-color: ${(props) => props.theme.color['blue-dark']};
+
+    ${(props) => props.theme.typo.label};
 `;
 
 export default Button;

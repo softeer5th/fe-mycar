@@ -72,22 +72,22 @@ const Line = styled.div`
 `;
 
 const Shevron = styled.div`
-    content: "";
-    width: 8px;
-    height: 8px;
-    border: 1px solid rgba(0, 0, 0, .5);
-    border-left: 0;
-    border-bottom: 0;
-    transform: rotate(45deg);
-    line-height: 1;
 
     align-self: center;
+    width: 8px;
+    height: 8px;
+    line-height: 1;
+    content: "";
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(45deg);
 `;
 
 const StepContainer = styled.li`
-    padding: 0 48px;
     display: flex;
     gap: 20px;
+    padding: 0 48px;
 `;
 
 const StepLabel = styled.span<{ $isHighlighted: boolean }>`

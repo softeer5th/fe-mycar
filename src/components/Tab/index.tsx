@@ -50,13 +50,13 @@ const LabelListContainer = styled.div`
 `;
 
 const LabelListContents = styled.div`
-    max-width: 1120px;
-    margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1120px;
     height: 70px;
+    margin: 0 auto;
 `;
 
 const LabelTitle = styled.h3 `
@@ -65,14 +65,13 @@ const LabelTitle = styled.h3 `
 
 const LabelList = styled.ul`
     display: flex;
-    gap: 25px;
-
     flex-wrap: nowrap;
+    gap: 25px;
     justify-content: space-between;
 `;
 
 const Label = styled.li`
-    margin: 0px 10px;
+    margin: 0 10px;
 `;
 
 const LabelButton = styled.button<{ selected: boolean }>`
@@ -83,25 +82,26 @@ const LabelButton = styled.button<{ selected: boolean }>`
 
 const LabelCheckboxContainer = styled.div`
     display: flex;
-    align-items: center;
     gap: 0.25rem;
+    align-items: center;
 `;
 
 const LabelCheckbox = styled.button`
-    display: inline-block;
     position: relative;
+    display: inline-block;
     width: 22px;
     height: 22px;
-    border-radius: 14px;
-    border: 2px solid #ccc;
     background: transparent;
-    &:after {
-      content: "";
+    border: 2px solid #ccc;
+    border-radius: 14px;
+
+    &::after {
       position: absolute;
       top: 4px;
       right: 4px;
       width: 8px;
       height: 5px;
+      content: "";
       border: 2px solid #ccc;
       border-top: 0;
       border-right: 0;

@@ -20,13 +20,13 @@ const OuterContainer = styled.div`
 `;
 
 const InnerContainer = styled.div`
-    height: 270px;
-    margin: 0px 60px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    height: 270px;
+    margin: 0 60px;
     background-color: ${(props) => props.theme.color['surface-alt']};
 `;
 

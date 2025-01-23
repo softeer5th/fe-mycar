@@ -18,9 +18,9 @@ const Container = styled(Link)`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: ${(props) => props.theme.color['text-default']};
     max-width: 280px;
     margin: 0 auto;
+    color: ${(props) => props.theme.color['text-default']};
     text-align: center;
     cursor: pointer;
 `;
@@ -31,7 +31,7 @@ const Image = styled.img`
 `;
 
 const ContentContainer = styled.div`
-    
+      
 `;
 
 const Title = styled.p`
