@@ -12,6 +12,7 @@ import CarCustom from "../components/model/carCustom";
 export enum CustomMode {
     "exterior",
     "interior",
+    "option"
 }
 
 

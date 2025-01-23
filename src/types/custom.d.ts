@@ -4,7 +4,7 @@ type option = {
     cost?: number;
 };
 
-type color = {
+export type color = {
     color: string;
     img: string;
     cost?: string;

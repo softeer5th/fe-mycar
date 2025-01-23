@@ -19,8 +19,8 @@ export default function CarDescription({ mode, setMode, model, preview }: Props)
 
     const handleMode = (e) => {
         const targetMode = e.currentTarget.name as CustomMode;
-        setMode(targetMode);
 
+        setMode(Number(targetMode));
     }
 
     const animation = () => {
@@ -98,8 +98,8 @@ export default function CarDescription({ mode, setMode, model, preview }: Props)
                 (탑트림에 모든 옵션을 포함한 차량 기준으로 제작되었습니다.)
             </p>
             <div className={`mt-5 flex flex-row items-center justify-center`}>
-                <button name={CustomMode.exterior.toString()} onClick={handleMode} className={`h-[40px] w-[140px] text-[15px] font-medium ${mode === CustomMode.exterior ? 'bg-[#007FA8] text-white ' : 'bg-[#E4DCD3]'}`}>Exterior</button>
-                <button name={CustomMode.interior.toString()} onClick={handleMode} className={`h-[40px] w-[140px] text-[15px] font-medium ${mode === CustomMode.interior ? 'bg-[#007FA8] text-white ' : 'bg-[#E4DCD3]'}`}>Interior</button>
+                <button name={CustomMode.exterior.toLocaleString()} onClick={handleMode} className={`h-[40px] w-[140px] text-[15px] font-medium ${mode === CustomMode.exterior ? 'bg-[#007FA8] text-white ' : 'bg-[#E4DCD3]'}`}>Exterior</button>
+                <button name={CustomMode.interior.toLocaleString()} onClick={handleMode} className={`h-[40px] w-[140px] text-[15px] font-medium ${mode === CustomMode.interior ? 'bg-[#007FA8] text-white ' : 'bg-[#E4DCD3]'}`}>Interior</button>
             </div>
         </div>
     )

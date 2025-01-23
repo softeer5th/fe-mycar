@@ -7,7 +7,7 @@ type Props = {
 
 export default function Container({ step, children }: Props) {
     return (
-        <div className={`w-full h-full px-[50px] py-[30px] overflow-y-scroll ${step === 1 && 'flex flex-row'}`}>
+        <div className={`w-full h-full pl-[50px] py-[30px] overflow-y-scroll ${step === 1 && 'flex flex-row'}`}>
             {children}
         </div>
     )
