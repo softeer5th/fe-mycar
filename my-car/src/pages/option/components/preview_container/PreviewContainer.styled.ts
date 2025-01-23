@@ -1,10 +1,15 @@
 import styled from 'styled-components';
 
 export const PreviewContainer = styled.div`
-  flex: 2;
+  position: fixed;
   display: flex;
   flex-direction: column;
   padding: 30px 80px 0 80px;
+`;
+
+export const PreviewWrapper = styled.div`
+  display: flex;
+  flex: 2;
 `;
 
 export const HeaderContainer = styled.div`
@@ -51,6 +56,7 @@ export const Image = styled.img`
   width: 100%;
   aspect-ratio: 2/1;
   padding: 20px 0 20px 0;
+  max-width: 900px;
 `;
 
 export const Toggle = styled.div`

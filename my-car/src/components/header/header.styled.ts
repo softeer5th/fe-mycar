@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
   top: 0;
   left: 0;
   height: 139px;
+  z-index: 100;
 `;
 
 export const HeaderTop = styled.div`
