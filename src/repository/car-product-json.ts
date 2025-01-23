@@ -13,7 +13,7 @@ export default class CarProductJsonRepository implements CarProductRepository {
     const response = await fetch(`http://localhost:3000/carProduct/${carCode}`);
     const carProducts = await response.json();
 
-    return carProducts.map((carProduct: CarProductJson) => ({
+    return carProducts.data.map((carProduct: CarProductJson) => ({
       saleModelCode: carProduct.saleModelCode,
       carModelPrice: Number(carProduct.carModelPrice),
       carTrimName: carProduct.carTrimName,
