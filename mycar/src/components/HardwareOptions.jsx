@@ -52,7 +52,7 @@ export default function HardwareOptions({ setPrice }) {
         </div>
       </div>
       <div className=' flex flex-col mt-14'>
-        <h3 className='text-lg font-bold'>상세 품목</h3>
+        <h3 className='text-lg font-bold mb-4'>상세 품목</h3>
         <div className='flex flex-wrap gap-8'>
           {data &&
             data.map((option, i) => {
