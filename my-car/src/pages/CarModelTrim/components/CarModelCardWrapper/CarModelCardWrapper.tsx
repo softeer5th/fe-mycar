@@ -1,6 +1,7 @@
 import {
   CardWrapper,
   CarImageWrapper,
+  CarImageButton,
   CarImg,
   CarTrimBadge,
   CarTrimDetail,
@@ -21,11 +22,11 @@ export default function CarModelCardWrapper() {
       <CarTrimPrice>
         49,450,000 원<CarTrimBadge>Best</CarTrimBadge>
       </CarTrimPrice>
-      <button>
-        <CarImageWrapper>
+      <CarImageWrapper>
+        <CarImageButton>
           <CarImg src="https://www.hyundai.com/contents/vr360/CE02/trim/VH.png"></CarImg>
-        </CarImageWrapper>
-      </button>
+        </CarImageButton>
+      </CarImageWrapper>
       <CarTrimDetailTextWrapper>
         <CarTrimDetail>2WD</CarTrimDetail>
         <CarTrimDetailButton>상세품목</CarTrimDetailButton>

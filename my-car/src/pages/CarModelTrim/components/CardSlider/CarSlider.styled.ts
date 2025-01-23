@@ -22,10 +22,16 @@ export const SliderWrapper = styled.div`
     opacity: 0.7; /* hover 상태에서 색상 */
   }
   .slick-prev {
-    z-index: 1;
+      left: 0;
   }
+    
+  .slick-next {
+      right: 0;
+  }
+    
   .slick-prev,
   .slick-next {
+      z-index: 1;
     background-color: grey;
     width: 44px;
     height: 44px;

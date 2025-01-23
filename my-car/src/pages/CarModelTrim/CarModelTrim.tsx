@@ -1,10 +1,10 @@
 import StepNavbar from "./components/StepNavbar/StepNavbar.tsx";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import { TrimWrapper } from "./components/TrimList/TrimList.tsx";
 import TotalModelTextWrapper from "./components/TotalModelTextWrapper/TotalModelTextWrapper.tsx";
-import CarModelCardWrapper from "./components/CarModelCardWrapper/CarModelCardWrapper.tsx";
-import MultipleItems from "./components/CardSlider/CarSlider.tsx";
 import CarSlider from "./components/CardSlider/CarSlider.tsx";
+import {TrimLayout} from "./components/TrimLayout/TrimLayout.styled.ts";
+import {port, url} from "../../mocks/handlers.ts";
 
 export type TrimTypeNameType = {
   trimTitle: string;
@@ -31,16 +31,27 @@ export default function CarModelTrim() {
   const [selectedTrim, setSeletedTrim] = useState<number[]>([0, 0, 0]);
   const [totalModelCount, setTotalModelCount] = useState<number>(3);
 
+
+  useEffect(() => {
+    fetch(`${url}${port}/api/carModelSelection?carId=1&trimNameList=1`).then((res) => {
+      res.json().then(({data}) => {
+        console.log(data)
+      });
+    })
+  }, []);
+
   return (
     <>
       <StepNavbar />
-      <TrimWrapper
-        trimTypeNameList={trimTypeNameList}
-        selectedTrim={selectedTrim}
-        setSeletedTrim={setSeletedTrim}
-      />
-      <TotalModelTextWrapper count={totalModelCount} />
-      <CarSlider />
+      <TrimLayout>
+        <TrimWrapper
+            trimTypeNameList={trimTypeNameList}
+            selectedTrim={selectedTrim}
+            setSeletedTrim={setSeletedTrim}
+        />
+        <TotalModelTextWrapper count={totalModelCount} />
+        <CarSlider />
+      </TrimLayout>
     </>
   );
 }
