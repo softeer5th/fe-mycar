@@ -4,6 +4,7 @@ import ELECTRONIC_CAR_LIST from './data/electronicCarList.json';
 import N_CAR_LIST from './data/nCarList.json';
 import PASSENGER_CAR_LIST from './data/passengerCarList.json';
 import CAR_MODEL_LIST from './data/carModelList.json';
+import SUCCESS_CAR_MODEL from './data/successCarModel.json';
 
 const carListHandler = ({ request }: { request: Request }) => {
   const url = new URL(request.url);
@@ -45,7 +46,12 @@ const carModelListHandler = ({ request }: { request: Request }) => {
   }
 };
 
+const successCarModelHandler = () => {
+  return HttpResponse.json(SUCCESS_CAR_MODEL);
+};
+
 export const worker = setupWorker(
   http.get('/car', carListHandler),
   http.get('/car/model', carModelListHandler),
+  http.get('/car/success', successCarModelHandler),
 );

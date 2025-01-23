@@ -11,4 +11,8 @@ export interface CarModel {
     defaultOptions: string[];
     selectOptions?: string[];
   };
+  interiorImgSrc: string;
+  exteriorImgSrc: string;
+  exteriorColor?: string;
+  interiorColor?: string;
 }
