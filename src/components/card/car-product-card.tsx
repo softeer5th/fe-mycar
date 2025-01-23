@@ -12,7 +12,7 @@ const CarProductCard = ({
   handleButtonClick,
 }: CarProductCardProps) => {
   return (
-    <div className=" min-w-[310px] h-full bg-[#f6f3f2] p-[30px] text-left border-[#f6f3f2] border-[3px] ">
+    <div className=" w-[25%] h-full bg-[#f6f3f2] p-[30px] text-left border-[#f6f3f2] border-[3px] ">
       <h4 className=" mt-2 text-[22px]">{carProduct.carTrimName}</h4>
       <span className=" mt-2 text-[22px]">
         {numberToWon({ type: 'full', amount: carProduct.carModelPrice })}

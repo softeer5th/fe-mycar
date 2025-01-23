@@ -5,7 +5,7 @@ import { CarProduct } from '../core/model';
 
 const SelectCarModel = () => {
   const [carProducts, setCarProducts] = useState<CarProduct[]>([]);
-  const [curruntPointer, setCurrentPointer] = useState(0);
+  const [currentPointer, setCurrentPointer] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
@@ -22,22 +22,26 @@ const SelectCarModel = () => {
   const handleButtonClick = () => {};
 
   return (
-    <div className="w-full min-w-[1340px] p-[50px]">
+    <div className="w-full min-w-[1340px] p-[50px]  overflow-hidden">
       <div className=" ml-[5px]  mb-[10px] text-[16px] leading-[30px] ">
         전체 모델
         <span className="text-[#007fa8]">({carProducts.length})</span>
       </div>
-      <div className=" min-w-[1340px] h-[594px] relative w-full overflow-hidden">
-        <button className=" absolute left-0 top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white">
+      <div className=" h-[594px] inline-block relative w-[1340px] mx-auto overflow-hidden ">
+        <button className=" absolute left-0 top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white z-10">
           {'<'}
         </button>
-        <button className="absolute right-[10px] top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white">
+        <button className="absolute right-0 top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white z-10">
           {'>'}
         </button>
-        <div>
+        <div className="box-border overflow-hidden">
           {newCarProductsArray.map((newCarProducts, idx) => (
             <CarProductBox
-              idx={idx - curruntPointer}
+              idx={
+                idx -
+                currentPointer -
+                Math.floor(newCarProductsArray.length / 2)
+              }
               carProducts={newCarProducts}
               handleButtonClick={handleButtonClick}
             />
@@ -59,11 +63,13 @@ const CarProductBox = ({
   carProducts,
   handleButtonClick,
 }: CarProductBoxProps) => {
+  const translateX = 1340 * idx;
+  const zIndex = idx === 0 ? 2 : 0;
   return (
     <div
-      className={` absolute top-0 left-0 w-full h-full inline-block overflow-hidden transition translate-x-[${idx * 1340}px]  z-4`}
+      className={`absolute top-0 left-0 w-[1340px] h-full inline-block overflow-hidden transform translate-x-[${translateX}px] z-[${zIndex}]`}
     >
-      <div className="flex gap-[30px]">
+      <div className="flex h-full gap-[30px]">
         {carProducts.map((carProduct) => (
           <CarProductCard
             carProduct={carProduct}
