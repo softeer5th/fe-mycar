@@ -34,7 +34,7 @@ export default function SelectOption() {
   if (isLoading) return;
   if (error) return;
   return (
-    <div className='h-dvh overflow'>
+    <div className='h-dvh'>
       <OptionPageHeader step={step} setStep={setStep} />
       <AnimatePresence initial={false} mode='wait'>
         {step === 1 ? (
@@ -56,7 +56,7 @@ export default function SelectOption() {
           </motion.div>
         ) : (
           <motion.div
-            className='w-full'
+            style={{ height: 'calc(100% - 146px)' }}
             key={step}
             initial={{ x: 500, y: 0, opacity: 0 }}
             animate={{
