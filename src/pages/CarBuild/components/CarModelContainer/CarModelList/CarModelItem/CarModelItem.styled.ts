@@ -6,6 +6,7 @@ export const CarModelItemLayout = styled.li`
   background-color: ${({ theme }) => theme.colors.beige350};
   padding: 3rem;
   gap: 2rem;
+  width: calc(25% - 2.4rem);
 `;
 
 export const ItemHeader = styled.div`
@@ -57,6 +58,10 @@ export const OptionList = styled.ul`
   display: flex;
   justify-content: center;
   gap: 2.4rem;
+
+  img {
+    width: 6.5rem;
+  }
 `;
 
 export const BuildButton = styled.button`
