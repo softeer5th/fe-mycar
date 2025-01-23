@@ -1,14 +1,12 @@
 type Car = {
-    name : string,
-    cost : number,
-    img : string
-}
+    name: string;
+    code: string;
+    cost: number;
+    img: string;
+};
 
 type CarList = {
-    carList : Car[]
-}
+    carList: Car[];
+};
 
-export {
-    Car,
-    CarList
-}
+export { Car, CarList };

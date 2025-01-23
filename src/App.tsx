@@ -11,9 +11,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<Main/>}/>
-      <Route path='/model' element={<Model/>}/>
-      <Route path='/result' element={<Result/>}/>
+      <Route path='/' element={<Main />} />
+      <Route path='/model/:car' element={<Model />} />
+      <Route path='/result' element={<Result />} />
     </Routes>
   )
 }

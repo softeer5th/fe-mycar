@@ -1,4 +1,5 @@
 type Tmodel = {
+    name: string;
     product: string;
     cost: number;
     category: string;

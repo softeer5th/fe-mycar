@@ -6,9 +6,14 @@ import Nav from "../components/model/nav";
 import API from "../utils/api";
 import Tmodel from "../types/model";
 import ModelList from "../components/model/modelList";
-import CarDescription from "../components/model/carDescription";
-import CarOption from "../components/model/carOption";
 import { useNavigate } from "react-router-dom";
+import CarCustom from "../components/model/carCustom";
+
+export enum CustomMode {
+    "exterior",
+    "interior",
+    "option"
+}
 
 const Model = () => {
 
@@ -51,8 +56,7 @@ const Model = () => {
                     </>
                     :
                     <>
-                        <CarDescription model={selectedModel} />
-                        <CarOption />
+                        <CarCustom model={selectedModel} />
                     </>}
             </Container>
         </div>
