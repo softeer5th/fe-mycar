@@ -2,8 +2,12 @@ import { useEffect, useState } from 'react';
 import CarProductCard from '../components/card/car-product-card';
 import { carProductRepository } from '../di';
 import { CarProduct } from '../core/model';
+import { useLocation, useNavigate } from 'react-router';
 
 const SelectCarModel = () => {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
   const [carProducts, setCarProducts] = useState<CarProduct[]>([]);
   const [currentPointer, setCurrentPointer] = useState(0);
   const [previousPointer, setPreviousPointer] = useState(0);
@@ -15,12 +19,15 @@ const SelectCarModel = () => {
     }
     fetchData();
   }, []);
+
   const newCarProductsArray = Array.from(
     { length: Math.ceil(carProducts.length / 4) },
     (_, i) => carProducts.slice(i * 4, i * 4 + 4),
   );
-
-  const handleButtonClick = () => {};
+  const newCarArrayLength = newCarProductsArray.length;
+  const handleButtonClick = (carModelCode: string) => {
+    navigate(`${pathname}/making/${carModelCode}`);
+  };
 
   return (
     <div className="w-full min-w-[1340px] p-[50px]  overflow-hidden">
@@ -28,47 +35,59 @@ const SelectCarModel = () => {
         전체 모델
         <span className="text-[#007fa8]">({carProducts.length})</span>
       </div>
-      <div className=" h-[594px] inline-block relative w-[1340px] mx-auto overflow-hidden ">
-        <button
-          className=" absolute left-0 top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white z-10"
-          onClick={() => {
-            setPreviousPointer(currentPointer);
-            setCurrentPointer(
-              (currentPointer - 1 + newCarProductsArray.length) %
-                newCarProductsArray.length,
-            );
-          }}
-        >
-          {'<'}
-        </button>
-        <button
-          className="absolute right-0 top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white z-10"
-          onClick={() => {
-            setPreviousPointer(currentPointer);
-            setCurrentPointer(
-              (currentPointer + 1) % newCarProductsArray.length,
-            );
-          }}
-        >
-          {'>'}
-        </button>
-        <div className="box-border overflow-hidden z-[1]">
-          {newCarProductsArray.map((newCarProducts, idx) => (
-            <CarProductBox
-              idx={
-                Math.abs(idx - currentPointer) >
-                Math.floor(newCarProductsArray.length / 2)
-                  ? idx - currentPointer > 0
-                    ? idx - currentPointer - newCarProductsArray.length
-                    : idx - currentPointer + newCarProductsArray.length
-                  : idx - currentPointer
-              }
-              carProducts={newCarProducts}
-              handleButtonClick={handleButtonClick}
-              isAnimating={idx === currentPointer || idx === previousPointer}
-              isActive={idx === currentPointer}
-            />
+      <div className="relative w-[1340px]">
+        <ul className=" flex absolute top-[-40px] justify-center items-center w-full h-[37px] z-10 ">
+          {Array.from({ length: newCarArrayLength }, (_, i) => (
+            <li key={i} className={' mr-1 py-3 px-1 '}>
+              <button
+                onClick={() => {
+                  setPreviousPointer(currentPointer);
+                  setCurrentPointer(i);
+                }}
+                className={`${i === currentPointer ? 'bg-[#007fa8]' : 'bg-[#ddd] '} w-3 h-3 rounded-md overflow-hidden `}
+              ></button>
+            </li>
           ))}
+        </ul>
+        <div className=" h-[594px] inline-block relative w-[1340px] mx-auto overflow-hidden ">
+          <button
+            className=" absolute left-0 top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white z-10"
+            onClick={() => {
+              setPreviousPointer(currentPointer);
+              setCurrentPointer(
+                (currentPointer - 1 + newCarArrayLength) % newCarArrayLength,
+              );
+            }}
+          >
+            {'<'}
+          </button>
+          <button
+            className="absolute right-0 top-[50%] mt-[-82px] w-11 h-11 bg-[#A0A4AA] text-white z-10"
+            onClick={() => {
+              setPreviousPointer(currentPointer);
+              setCurrentPointer((currentPointer + 1) % newCarArrayLength);
+            }}
+          >
+            {'>'}
+          </button>
+          <div className="box-border overflow-hidden z-[1]">
+            {newCarProductsArray.map((newCarProducts, idx) => (
+              <CarProductBox
+                idx={
+                  Math.abs(idx - currentPointer) >
+                  Math.floor(newCarArrayLength / 2)
+                    ? idx - currentPointer > 0
+                      ? idx - currentPointer - newCarArrayLength
+                      : idx - currentPointer + newCarArrayLength
+                    : idx - currentPointer
+                }
+                carProducts={newCarProducts}
+                handleButtonClick={handleButtonClick}
+                isAnimating={idx === currentPointer || idx === previousPointer}
+                isActive={idx === currentPointer}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -78,7 +97,7 @@ const SelectCarModel = () => {
 type CarProductBoxProps = {
   idx: number;
   carProducts: CarProduct[];
-  handleButtonClick: () => void;
+  handleButtonClick: (props: string) => void;
   isAnimating?: boolean;
   isActive?: boolean;
 };
@@ -102,7 +121,9 @@ const CarProductBox = ({
         {carProducts.map((carProduct) => (
           <CarProductCard
             carProduct={carProduct}
-            handleButtonClick={() => handleButtonClick()}
+            handleButtonClick={() =>
+              handleButtonClick(carProduct.saleModelCode)
+            }
           />
         ))}
       </div>
