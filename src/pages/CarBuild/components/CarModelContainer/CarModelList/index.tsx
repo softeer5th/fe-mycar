@@ -1,6 +1,6 @@
 import CarModelItem from './CarModelItem';
 import { CarModel } from '../../../CarBuild.types';
-import { CarModelListLayout } from './CarModelList.styled';
+import * as S from './CarModelList.styled';
 
 interface CarModelListProps {
   carModelList: CarModel[];
@@ -9,11 +9,11 @@ interface CarModelListProps {
 
 const CarModelList = ({ carModelList, currentIdx }: CarModelListProps) => {
   return (
-    <CarModelListLayout $currentIdx={currentIdx}>
+    <S.CarModelListLayout $currentIdx={currentIdx}>
       {carModelList.map((carModel) => (
         <CarModelItem key={carModel.id} carModel={carModel} />
       ))}
-    </CarModelListLayout>
+    </S.CarModelListLayout>
   );
 };
 

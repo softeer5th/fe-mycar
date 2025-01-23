@@ -1,7 +1,25 @@
 import styled from 'styled-components';
 
+export const CarModelContainerLayout = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+`;
+
+export const CarModelLabelContainer = styled.div`
+  display: flex;
+  gap: 0.8rem;
+  ${({ theme }) => theme.fonts.subTitle};
+  font-weight: 400;
+`;
+
+export const CarModelCount = styled.span`
+  color: ${({ theme }) => theme.colors.blue300};
+`;
+
 export const CarModelCarouselContainer = styled.div`
   position: relative;
+  max-width: 160rem;
 `;
 
 export const IndexButtonWrapper = styled.div`
@@ -23,7 +41,6 @@ export const IndexButton = styled.button<{ $isSelected: boolean }>`
 
 export const CarModelCarousel = styled.div`
   position: relative;
-  max-width: 140rem;
   overflow-x: hidden;
   margin: 0 auto;
 `;

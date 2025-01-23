@@ -38,13 +38,15 @@ const CarModelContainer = ({ engineType }: { engineType: string }) => {
   }, [selectedTab, engineType]);
 
   return (
-    <>
-      <div>
+    <S.CarModelContainerLayout>
+      <S.CarModelLabelContainer>
         <span>모델 비교</span>
         <span>|</span>
-        <span>전체 모델 ({carModelList.length})</span>
-      </div>
-
+        <div>
+          <span>전체 모델 </span>
+          <S.CarModelCount>({carModelList.length})</S.CarModelCount>
+        </div>
+      </S.CarModelLabelContainer>
       <S.CarModelCarouselContainer>
         <S.IndexButtonWrapper>
           {Array.from({ length: maxIdx + 1 }).map((_, idx) => (
@@ -62,7 +64,7 @@ const CarModelContainer = ({ engineType }: { engineType: string }) => {
           <CarModelList carModelList={carModelList} currentIdx={currentIdx} />
         </S.CarModelCarousel>
       </S.CarModelCarouselContainer>
-    </>
+    </S.CarModelContainerLayout>
   );
 };
 
