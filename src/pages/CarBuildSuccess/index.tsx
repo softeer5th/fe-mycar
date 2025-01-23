@@ -6,6 +6,9 @@ import styled from 'styled-components';
 
 const TABS = ['Exterior', 'Interior'];
 
+const OPTION_TABS = ['선택품목', '기본포함품목'];
+const SUB_TABS = ['파워트레인/성능', '지능형 안전기술', '안전', '외관', '내장'];
+
 const CarBuildSuccess = () => {
   const [successCarModel, setSuccessCarModel] = useState<CarModel>();
 
@@ -42,6 +45,39 @@ const CarBuildSuccess = () => {
             </Tab.trigger>
           ))}
         </TabList>
+      </Tab.root>
+
+      <Tab.root defaultValue={OPTION_TABS[0]}>
+        <TabList>
+          {OPTION_TABS.map((tab) => (
+            <Tab.trigger key={tab} value={tab}>
+              {tab}
+            </Tab.trigger>
+          ))}
+        </TabList>
+
+        <Tab.content value={OPTION_TABS[0]}>
+          <div>선택품목</div>
+        </Tab.content>
+
+        <Tab.content value={OPTION_TABS[1]}>
+          <Tab.root defaultValue={SUB_TABS[0]}>
+            <SubTabList>
+              {SUB_TABS.map((tab) => (
+                <Tab.trigger key={tab} value={tab}>
+                  {tab}
+                </Tab.trigger>
+              ))}
+            </SubTabList>
+
+            <Tab.content value={SUB_TABS[0]}>
+              <div>{SUB_TABS[0]}</div>
+            </Tab.content>
+            <Tab.content value={SUB_TABS[1]}>
+              <div>{SUB_TABS[1]}</div>
+            </Tab.content>
+          </Tab.root>
+        </Tab.content>
       </Tab.root>
     </CarBuildSuccessLayout>
   );
@@ -94,6 +130,24 @@ const TabList = styled.ul`
       background-color: ${({ theme }) => theme.colors.blue400};
       color: ${({ theme }) => theme.colors.white};
       border: 0.1rem solid ${({ theme }) => theme.colors.blue400};
+    }
+  }
+`;
+
+export const SubTabList = styled.ul`
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 4rem;
+
+  button {
+    ${({ theme }) => theme.fonts.body.small};
+    color: ${({ theme }) => theme.colors.gray400};
+    transition: color 0.5s, background-color 0.5s;
+    padding: 1.2rem 1rem;
+
+    &[data-state='active'] {
+      color: ${({ theme }) => theme.colors.blue300};
     }
   }
 `;

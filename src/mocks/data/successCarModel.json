@@ -1,8 +1,8 @@
 {
   "id": 1,
   "imgSrc": "https://www.hyundai.com/contents/vr360/CE02/trim/VH.png",
-  "exteriorImgSrc": "https://www.hyundai.com/contents/vr360/FE04/exterior/A5G/001.png",
-  "interiorImgSrc": "https://www.hyundai.com/contents/vr360/FE04/interior/SRX/img-interior.png",
+  "exteriorImgSrc": "https://www.hyundai.com/contents/vr360/DN20/exterior/NY9/001.png",
+  "interiorImgSrc": "https://www.hyundai.com/contents/vr360/DN20/interior/NNB/img-interior.png",
   "name": "캐스퍼 일렉트릭",
   "price": 30000000,
   "model": "Premium",
