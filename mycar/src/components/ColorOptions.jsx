@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 import { getColorList } from '../apis/dataFetch';
+import ColorSelector from './ColorSelector';
 
 export default function ColorOptions({ colorIndex, setColorIndex }) {
   const { data, isLoading, isError } = useQuery({
@@ -9,27 +10,24 @@ export default function ColorOptions({ colorIndex, setColorIndex }) {
   });
 
   return (
-    <div className='flex flex-col'>
-      <h2>색상</h2>
-      <div className='flex justify-between'>
-        <h4>외장색상</h4>
-        <p>{data && data.outerColor[colorIndex.outerColor].colorName}</p>
-      </div>
-      <div className='flex flex-wrap'>
-        {data &&
-          data.outerColor.map((outerColor, i) => (
-            <img
-              key={i}
-              className='w-1/5'
-              src={outerColor.imageSrc}
-              onClick={() =>
-                setColorIndex((prev) => {
-                  return { ...prev, outerColor: i };
-                })
-              }
-            />
-          ))}
-      </div>
+    <div className='flex flex-col mx-20 mt-20'>
+      <h2 className='text-2xl  font-bold'>색상</h2>
+      {data && (
+        <>
+          <ColorSelector
+            isOuter={true}
+            color={data.outerColor}
+            colorIndex={colorIndex}
+            setColorIndex={setColorIndex}
+          />
+          <ColorSelector
+            isOuter={false}
+            color={data.innerColor}
+            colorIndex={colorIndex}
+            setColorIndex={setColorIndex}
+          />
+        </>
+      )}
     </div>
   );
 }
