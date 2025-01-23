@@ -1,6 +1,7 @@
 import { use } from 'react';
 import styled from 'styled-components';
 
+import Carousel from '../../../components/Carousel';
 import type { Model } from '../../../domain/Model';
 import ModelCard from './ModelCard';
 
@@ -9,7 +10,9 @@ const ModelCardList = ({ modelDataList }: { modelDataList: Promise<Model[]> }) =
   
   return (
     <CardListContainer>
-      {data.map((model: Model) => <ModelCard key={model.id} {...model} />)}
+      <Carousel count={4} >
+        {data.map((model: Model) => <ModelCard key={model.id} {...model} />)}
+      </Carousel>
     </CardListContainer>
   );
 };

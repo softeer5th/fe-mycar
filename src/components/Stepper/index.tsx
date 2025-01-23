@@ -72,7 +72,6 @@ const Line = styled.div`
 `;
 
 const Shevron = styled.div`
-
     align-self: center;
     width: 8px;
     height: 8px;

@@ -23,7 +23,7 @@ const ModelCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
-    max-width: 280px;
+    max-width: 300px;
     height: 100%;
     padding: 30px;
     background-color: ${props => props.theme.color['surface-alt']};
