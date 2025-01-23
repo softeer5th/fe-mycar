@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Header } from '../../components/header.tsx';
+import { Header } from '../../components/header/Header.tsx';
 import { FilterList } from './components/FilterList.tsx';
 import { BoxListSlide } from './components/BoxListSlide.tsx';
 import { useState } from 'react';
