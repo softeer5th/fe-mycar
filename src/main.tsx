@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')!).render(
       <Route path="model/:carCode">
         <Route element={<ModelLayout />}>
           <Route index element={<SelectCarModel />} />
-          <Route path="making" element={<MakeMyCar />} />
+          <Route path="making/:carModel" element={<MakeMyCar />} />
         </Route>
         <Route path="estimate" element={<EstimateMyCar />} />
       </Route>

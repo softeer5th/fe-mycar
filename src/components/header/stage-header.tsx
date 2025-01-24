@@ -28,6 +28,9 @@ const StageHeader = () => {
                 ? `${selectedIcon} after:left-[120px]`
                 : 'opacity-50'
             } pl-[50px] relative `}
+            onClick={(e) =>
+              !pathname.includes('making') ? e.preventDefault() : ''
+            }
           >
             <span className=" mr-5">02 </span> 내 차 만들기
           </Link>
