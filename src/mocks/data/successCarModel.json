@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "imgSrc": "https://www.hyundai.com/contents/vr360/CE02/trim/VH.png",
+  "exteriorImgSrc": "https://www.hyundai.com/contents/vr360/DN20/exterior/NY9/001.png",
+  "interiorImgSrc": "https://www.hyundai.com/contents/vr360/DN20/interior/NNB/img-interior.png",
+  "name": "캐스퍼 일렉트릭",
+  "price": 30000000,
+  "model": "Premium",
+  "description": "자가용 스마트스트림 가솔린 1 .6터보",
+  "isBest": false,
+  "engineType": "2WD",
+  "options": {
+    "defaultOptions": [
+      "https://www.hyundai.com/contents/vr360/CE02/trim/VH-USP-001.png",
+      "https://www.hyundai.com/contents/vr360/CE02/trim/VH-USP-002.png",
+      "https://www.hyundai.com/contents/vr360/CE02/trim/VH-USP-003.png"
+    ],
+    "selectOptions": []
+  },
+  "exteriorColor": "트랜스미션블루펄",
+  "interiorColor": "블랙모노톤"
+}

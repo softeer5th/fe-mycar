@@ -1,20 +1,20 @@
 import CarModelItem from './CarModelItem';
 import { CarModel } from '../../../CarBuild.types';
-import styled from 'styled-components';
+import * as S from './CarModelList.styled';
 
-const CarModelList = ({ carModelList }: { carModelList: CarModel[] }) => {
+interface CarModelListProps {
+  carModelList: CarModel[];
+  currentIdx: number;
+}
+
+const CarModelList = ({ carModelList, currentIdx }: CarModelListProps) => {
   return (
-    <CarModelListLayout>
+    <S.CarModelListLayout $currentIdx={currentIdx}>
       {carModelList.map((carModel) => (
         <CarModelItem key={carModel.id} carModel={carModel} />
       ))}
-    </CarModelListLayout>
+    </S.CarModelListLayout>
   );
 };
-
-const CarModelListLayout = styled.ul`
-  display: flex;
-  gap: 3.2rem;
-`;
 
 export default CarModelList;

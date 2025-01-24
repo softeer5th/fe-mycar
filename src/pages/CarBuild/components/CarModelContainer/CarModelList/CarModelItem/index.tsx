@@ -1,3 +1,4 @@
+import { useNavigate, useParams } from 'react-router';
 import { CarModel } from '../../../../CarBuild.types';
 import * as S from './CarModelItem.styled';
 
@@ -6,12 +7,20 @@ interface CarModelItemProps {
 }
 
 const CarModelItem = ({ carModel }: CarModelItemProps) => {
+  const navigate = useNavigate();
+  const { id: carId } = useParams();
+
+  const goToCarBuild = () => {
+    // navigate(`/car-build/${carId}/${carModel.id}`);
+    navigate(`/car-build/${carId}/${carModel.id}/success`);
+  };
+
   return (
     <S.CarModelItemLayout>
       <S.ItemHeader>
         <S.ModelTitle>{carModel.model}</S.ModelTitle>
         <S.ModelPrice>{carModel.price.toLocaleString()}원</S.ModelPrice>
-        {carModel.isBest ? <S.BestBadge>isBest</S.BestBadge> : null}
+        {carModel.isBest ? <S.BestBadge>Best</S.BestBadge> : null}
       </S.ItemHeader>
       <img src={carModel.imgSrc} />
       <S.DescriptionContainer>
@@ -25,7 +34,7 @@ const CarModelItem = ({ carModel }: CarModelItemProps) => {
           </li>
         ))}
       </S.OptionList>
-      <S.BuildButton>내 차 만들기</S.BuildButton>
+      <S.BuildButton onClick={goToCarBuild}>내 차 만들기</S.BuildButton>
     </S.CarModelItemLayout>
   );
 };
