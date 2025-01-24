@@ -10,7 +10,7 @@ export default function ModelCard({ carModel, cardWidth, setSelectedModel }) {
       style={{ width: cardWidth - 21 }} // 카드 간의 gap만큼 빼준 값
     >
       <div className=' text-xl font-bold'>{carModel.modelName}</div>
-      <div className=' text-lg font-bold'>{carModel.price}</div>
+      <div className=' text-lg font-bold'>{carModel.price.toLocaleString() + ' 원'}</div>
       <img className=' mt-10' src={carModel.imageSrc} />
       <div className=' w-full flex justify-around my-10'>
         {optionImageList.map((optionImage, i) => {

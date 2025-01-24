@@ -1,29 +1,38 @@
 import classNames from 'classnames';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import ColorOptions from './ColorOptions';
+import HardwareOptions from './HardwareOptions';
 
-export default function CarOptionList({ selectedModel }) {
+export default function CarOptionList({ selectedModel, colorIndex, setColorIndex, setCarPrice }) {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const scrollRef = useRef(null);
 
   useEffect(() => {
+    const scrollElement = scrollRef.current;
+
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
+      setScrollPosition(scrollElement.scrollTop);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    scrollElement.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup
+      scrollElement.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
     <div
+      ref={scrollRef}
       className={classNames(
-        'bg-slate-600 transition-all duration-500 overflow-y-auto',
-        scrollPosition < 300 ? 'w-2/5' : 'w-3/4',
+        ' transition-all duration-500 overflow-y-auto',
+        scrollPosition < 1500 ? 'w-2/5' : 'w-3/4',
       )}
     >
-      <div style={{ height: '3000px' }}> </div>
+      <div>
+        <ColorOptions colorIndex={colorIndex} setColorIndex={setColorIndex} />
+        <HardwareOptions setPrice={setCarPrice} />
+      </div>
     </div>
   );
 }
