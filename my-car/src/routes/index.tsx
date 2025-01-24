@@ -2,7 +2,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import ModelSelection from '../pages/modelselection/ModelSelection.tsx';
 import Done from '../pages/done.tsx';
-import Option from '../pages/option.tsx';
+import Option from '../pages/option/Option.tsx';
 
 export const routes = {
   modelSelection: '/',
