@@ -1,6 +1,7 @@
-import { DefaultTheme } from 'styled-components';
-import {color} from './color';
-import {typo} from './typo';
+import type { DefaultTheme } from 'styled-components';
+
+import { color } from './color';
+import { typo } from './typo';
 
 export type ColorsTypes = typeof color;
 export type FontsTypes = typeof typo;
@@ -10,5 +11,5 @@ export const theme: DefaultTheme = {
   typo,
 };
 
-export * from './GlobalStyle';
 export * from './GlobalFont';
+export * from './GlobalStyle';

@@ -1,8 +1,8 @@
 export interface Option {
-    color: CarColor;
+  color: CarColor;
 }
 
 interface CarColor {
-    innerColor: string;
-    outerColor: string;
+  innerColor: string;
+  outerColor: string;
 }

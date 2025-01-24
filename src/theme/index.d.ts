@@ -1,5 +1,6 @@
-import 'styled-components'
-import { ColorsTypes, FontsTypes } from '.';
+import 'styled-components';
+
+import type { ColorsTypes, FontsTypes } from '.';
 
 declare module 'styled-components' {
   export interface DefaultTheme {

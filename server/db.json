@@ -636,6 +636,148 @@
             },
             "minPrice": 42000000,
             "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/staria-24my-45side.png"
+        },{
+            "id": 32,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+                "engine": "수소",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 33,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+                "engine": "수소",
+                "transmission": "자동",
+                "bodyType": "세단",
+                "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 34,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 35,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 36,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 37,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 38,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 39,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 40,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 41,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
+        },
+        {
+            "id": 42,
+            "vehicleId": 1,
+            "name": "Standard",
+            "spec": {
+            "engine": "수소",
+            "transmission": "자동",
+            "bodyType": "세단",
+            "driveType": "2WD"
+            },
+            "minPrice": 50000000,
+            "imageUrl": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-24my-45side.png"
         }
     ]
 }
