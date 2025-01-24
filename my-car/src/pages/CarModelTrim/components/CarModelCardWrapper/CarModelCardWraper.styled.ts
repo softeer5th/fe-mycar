@@ -33,10 +33,17 @@ export const CarTrimBadge = styled.i`
 `;
 
 export const CarImageWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+`
+
+export const CarImageButton = styled.button`
   margin-top: 50px;
 `;
 export const CarImg = styled.img`
-  object-fit: content;
+  object-fit: contain;
+    width: 100%;
 `;
 
 // 여기에는 2WD 같은거 박스
@@ -75,7 +82,12 @@ export const CarTrimDetailImgWrapper = styled.li`
   padding: 0px 10px;
 `;
 
-export const CarTrimDetailImg = styled.img``;
+
+
+export const CarTrimDetailImg = styled.img`
+object-fit: contain;
+    width: 100%;
+`;
 
 export const CreateMyCarButton = styled.button`
   position: absolute;

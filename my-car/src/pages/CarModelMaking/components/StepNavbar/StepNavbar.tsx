@@ -1,3 +1,4 @@
+import SubStep from "../SubStep/SubStep.tsx";
 import {
   StepItem,
   StepItemAnchor,
@@ -19,6 +20,7 @@ export default function StepNavbar() {
           <StepTitle>02</StepTitle>내 차 만들기
         </StepItemAnchor>
       </StepItem>
+      <SubStep />
     </StepWrapper>
   );
 }
